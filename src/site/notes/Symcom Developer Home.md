@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/symcom-developer-home/","tags":["gardenEntry"]}
 ---
 
+# Symcom Developer Guide
 Last Update: April, 2024.
 Getting Started:
 Below are some important sections which help understand the Symcom Project and its work structure. 
