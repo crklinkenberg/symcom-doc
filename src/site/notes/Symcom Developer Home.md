@@ -5,7 +5,7 @@
 # Symcom Developer Guide
 Last Update: April, 2024.
 Getting Started:
-Below are some important sections which help understand the Symcom Project and its work structure.  This is new write.mmmm
+Below are some important sections which help understand the Symcom Project and its work structure. 
 
 #### **Overview**:
 The site [www.reference-repertoy.com](http://www.reference-repertoy.com) is the gateway to the main administrator panel. Upon logging in, addition of new books, new magazines, access to existing books, magazines, and grading configuration for fonts of sources, including details of medicines, authors, publishers, and tester (provers) can be found and edited.
