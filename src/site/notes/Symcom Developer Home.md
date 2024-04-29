@@ -8,7 +8,7 @@ Getting Started:
 Below are some important sections which help understand the Symcom Project and its work structure. 
 
 #### **Overview**:
-The site [www.reference-repertoy.com](http://www.reference-repertoy.com) is the gateway to the main administrator panel. Upon logging in, addition of new books, new magazines, access to existing books, magazines, and grading configuration for fonts of sources, including details of medicines, authors, publishers, and tester (provers) can be found and edited.
+The site [www.reference-repertoy.com](http://www.reference-repertory.com) is the gateway to the main administrator panel. Upon logging in, addition of new books, new magazines, access to existing books, magazines, and grading configuration for fonts of sources, including details of medicines, authors, publishers, and tester (provers) can be found and edited.
 
 The admin panel is also provided with an import section for new source import. Once logged in the user can choose to perform several actions like comparison between different sources, connection of symptoms in the comparison process: addition and modification of provers, source references, authors, synonyms etc. Additionally, there are also platforms like “materia-medica” and “history” to manage and handle the sources inside the Symcom application.
 
@@ -29,8 +29,8 @@ Imports of new symptoms to existing sources are done in this section. Import set
 
 Certain rules are there according to which import of symptoms is processed. The program analyses the imported symptoms and saves them according to the rules, confirmations for unrecognized patterns is also done by the program.
 
-[Click here for the rules.](#bookmark=id.1jlao46)
-[Click here for technical guide.](#bookmark=id.gjdgxs)
+[[Topics/Rules relating to symptom import\|Rules relating to symptom import]]
+[[Topics/Symcom Developer Guide (Work Chart)\|Symcom Developer Guide (Work Chart)]]
 
 #### **Font Settings**:
 Font settings for display of different symptoms of the Quelle (_sources_) can be done from the main menu in “Setting Sources” option. The menu contains grading values for different text formats of the symptom. The grading values are set with values like 1, 2, 3 etc. These values are assigned in “Grading” settings menu where each value represents font formats like bold, italics etc.
@@ -38,8 +38,6 @@ Font settings for display of different symptoms of the Quelle (_sources_) can be
 When for a particular source, the grade is assigned for the already defined grade values in the “Grade Setting” page, the symptoms of the source are converted whenever it is displayed.
 
 For example: If for “Bold” option the value is assigned to number 2 in the “Gradings” section and if for a particular source the “Kursiv” option is assigned to number 2 in the “Grade Setting” page then since the number 2 is defined for “Bold’ option, the symptoms in kursiv (italics) will be converted to bold font whenever it is displayed in the Symcom application.
-
-[Click here for detailed technical guide.](#bookmark=id.4d34og8)
 
 #### **Symptom Type Setting:**
 Symptoms can be defined by a type and the symptom type of a particular source can be defined from the “Symptom Type Setting” menu option.
@@ -53,9 +51,7 @@ In the comparison page, connection functions like connect, connect-edit, paste, 
 
 Multiple comparing sources can be selected for a single initial source. When multiple combined sources are compared, there may be situations when the initial source may become younger or equal to the comparing source year. In such cases, the **symptoms when connected are swapped**. Functionality of symptoms for connections, connect-edit, paste, paste-edit and swap are different and follows a series rules.
 
-[Click here for the rules.](#bookmark=id.43ky6rz)
-[Click here for technical details.](#bookmark=id.2s8eyo1)
-
+[[Topics/Basic Rules relating to connection of symptoms in comparison page\|Basic Rules relating to connection of symptoms in comparison page]]
 #### **Saving of Comparisons:**
 Comparisons after proper inspection of non-secure connections and markings by the editor and the supervisor can be saved. Whenever a comparison is saved, connect, connect-edit and swap connections are preserved for further comparisons and editing. All initial and comparing symptoms become a single symptom list which are displayed chronologically as per their source year. All paste and paste edit connected symptoms are sorted just below its initial parent. This new combined source becomes ready for further comparisons with other sources.
 
