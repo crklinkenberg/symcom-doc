@@ -28,7 +28,7 @@
 11. [[Topics/Some PHP function name and their description\|Some PHP function name and their description]]
 12. [[Topics/Matched percentage and highlighted words process in comparison page\|Matched percentage and highlighted words process in comparison page]]
 13. [[Topics/Translation of symptoms\|Translation of symptoms]]
-14. MySQL Database Table Structures
+14. [[SQL Table Structure.pdf]]
 15. [[Topics/Rules relating to symptom import\|Rules relating to symptom import]]
 16. [[Topics/All Connection Business Logic\|All Connection Business Logic]]
 17. [[Topics/Basic Rules relating to connection of symptoms in comparison page\|Basic Rules relating to connection of symptoms in comparison page]]
