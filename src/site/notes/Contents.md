@@ -61,3 +61,4 @@
 42. [[Topics/Important Functionalities & their workflows\|Important Functionalities & their workflows]]
 	1. Source type of a symptom
 	2. Symptom type of a symptom
+43. [[Topics/Custom text box for page navigation\|Custom text box for page navigation]]
