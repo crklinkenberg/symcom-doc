@@ -62,3 +62,4 @@
 	1. Source type of a symptom
 	2. Symptom type of a symptom
 43. [[Topics/Custom text box for page navigation\|Custom text box for page navigation]]
+44. [[Topics/Chapter Structure Guide\|Chapter Structure Guide]]
