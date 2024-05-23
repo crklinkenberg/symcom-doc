@@ -28,7 +28,7 @@ Clicking on the "Show Chapter List" from the chapter section menu panel will dis
 If the order of the symptoms shown is to be changed, then the above sort button can be clicked.
 ![Pasted image 20240523172129.png](/img/user/assets/Pasted%20image%2020240523172129.png)
 
-Here any of these symptoms can be changed from their displayed by clicking the mouse and dragging in the desired location. The previous and current changed position will be displayed in green color for a second by the program for reference.
+Here any of these symptoms can be changed from their displayed position by clicking the mouse and dragging in the desired location. The previous and current changed position will be displayed in green color for a second by the program for reference.
 ![Pasted image 20240523172315.png](/img/user/assets/Pasted%20image%2020240523172315.png)
 
 To go back, the browser back button can be used and it will show the new updated symptom list under that chapter in the structure.
