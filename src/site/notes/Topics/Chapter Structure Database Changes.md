@@ -4,6 +4,7 @@
 
 
 Below SQL queries are executed after the classification database is created in the server.
+Run the below codes in `symptom_classification` database.
 ```SQL
 -- Changes in chapter_main_head sql table.
 -- Column is added
@@ -49,7 +50,10 @@ ALTER TABLE `chapter_main_head` CHANGE `structure_id` `structure_id` VARCHAR(11)
 ALTER TABLE `chapter_sub_head` CHANGE `structure_id` `structure_id` VARCHAR(11) NULL DEFAULT '0';
 
 ALTER TABLE `chapter_sub_sub_head` CHANGE `structure_id` `structure_id` VARCHAR(11) NULL DEFAULT '0';
+```
 
+Run the below  codes in the development, staging and production environment. Avoid if changes already exists.
+```sql
 --adding chapter weight
 ALTER TABLE `symptom_chapter_assignment` ADD `chapter_weight` INT(10) NOT NULL DEFAULT '0' AFTER `chapter_id`;
 ```
