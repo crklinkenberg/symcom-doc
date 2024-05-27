@@ -27,6 +27,7 @@ and suppose the below is data from  `chapter_sub_head` SQL table.
 | --- | ------------------ | ------------------------ | ------------------- | ------------ |
 | 1   | General outer head | Allgemeiner äußerer Kopf | 2                   | 1            |
 | 2   | Temples            | Tempel                   | 2                   | 2            |
+
 We can see that the Head, outer main chapter has two sub chapters with id 1 and 2 respectively.
 If a new chapter is to be added in before sub chapter with id 2 that is Temples, then the new added chapter row should contain `structure_id` value less than the `structure_id` value of Temples chapter. In this case, we can take values like `1.9`. So the `chapter_sub_head` tables will now changes like this:
 
