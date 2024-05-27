@@ -40,6 +40,10 @@ To go back, the browser back button can be used and it will show the new updated
 Chapter Structure Technical Guide:
 Changes in the queries after installation of chapter classification python program: 
 Check: [[Topics/Chapter Structure Database Changes\|Chapter Structure Database Changes]]
-
+Check additional important topics:
+1. [[Topics/Chapter Structure Creation, Installation, Modification Process\|Chapter Structure Creation, Installation, Modification Process]]
+2. [[Topics/Chapter Assignment, Display, Saving Process (Technical)\|Chapter Assignment, Display, Saving Process (Technical)]]
+3. [[Topics/Chapter assignment modification\|Chapter assignment modification]]
+4. [[Topics/Chapter List Display and Sorting of Symptoms\|Chapter List Display and Sorting of Symptoms]]
 
 
