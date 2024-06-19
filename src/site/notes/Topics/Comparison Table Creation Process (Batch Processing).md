@@ -3,17 +3,17 @@
 ---
 
 
-When comparison button is clicked, the form with id "symptom_comparison_form" is submitted and an ajax request is sent to "check-if-comparison-table-exist-batch-processing.php" script along with all the relevant data required to start the comparison.
+When comparison button is clicked, the form with id "symptom_comparison_form" is submitted and an ajax request is sent to "check-if-comparison-table-exist-new.php" script along with all the relevant data required to start the comparison.
 
 Below link shows the workflow of all the scripts involed in the process:
 
 [Digramatical illustration of the comparison process.](https://app.eraser.io/workspace/GRQZN2ItG5mVk66JIday?origin=share)
 
-Workflow of check-if-comparison-table-exist-batch-processing.php script:
+Workflow of check-if-comparison-table-exist-new.php script:
 
 - The comparison table name is created using the word "comparison_table_" before arznei id, initial source id, comparing source id and the comparison language.
     
-- The existing table is first searched in the system from the "pre_comparison_master_data" mysql table and if the table is not present all prerequisite operations are done and comparison table and its highets matches table is created.
+- The existing table is first searched in the system from the "pre_comparison_master_data" mysql table and if the table is not present all prerequisite operations are done and comparison table and its highest matches table is created.
     
 - The number of initial symptoms is calculated and is then sent as parameters in the shell_exec() command to the script "create-dynamic-comparison-table-new.php".
 ```
