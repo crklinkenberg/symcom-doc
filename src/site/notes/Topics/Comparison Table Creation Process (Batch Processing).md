@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/comparison-table-creation-process-batch-processing/"}
 ---
 
+Please Note: This process is not yet integrated to Symcom. Only tested. New codes from `create-dynamic-comparison-table.php` script might not be updated in this process. These needs review and updates before integration.
 
 When comparison button is clicked, the form with id "symptom_comparison_form" is submitted and an ajax request is sent to "check-if-comparison-table-exist-new.php" script along with all the relevant data required to start the comparison.
 
