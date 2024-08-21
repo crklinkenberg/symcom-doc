@@ -69,3 +69,4 @@
 48. [[Topics/Custom text box for page navigation\|Custom text box for page navigation]]
 49. [[Topics/Sorting of symptoms based on superscript numbers\|Sorting of symptoms based on superscript numbers]]
 50. [[Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
+51. [[Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
