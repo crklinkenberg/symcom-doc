@@ -7,7 +7,7 @@
 | function                                     | description                                                                                                   |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | punctuationPositionFix                       | function to separate punctuation symbols from customized html tags thereby making it ineffective to gradings. |
-| symptomEndIdentifyCheckForAlphaBetaAndT      | this function checks if a string has single t , double t or ends with a degree.                               |
+| symptomEndIdentifyCheckForAlphaBetaAndT      | this function checks if a string has single t or double t .                                                   |
 | getPreCompId                                 | get pre comparison id from pre comparison master data SQL table based on the comparison table name.           |
 | getPreCompIdOfIndividualConnection           | get pre comparison id individual symptom.                                                                     |
 | checkIsDeletingConnectionInCurrentComparison | function used to check if disconnecting connection is from the current comparison  connection table.          |
