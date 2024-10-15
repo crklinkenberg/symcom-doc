@@ -30,7 +30,7 @@ Symptom type can be assigned for a source using the settings of "Symptomart" und
 
 Symptom type are given values as proving, intoxication etc.
 
-Related PHP functions: fetchSymptomTypeModified(symptom id, original quelle id, symptom end detection for t , tt and pallet)
+Related PHP functions: fetchSymptomTypeModified(symptom id, original quelle id, extracted symptom string parts based on custom tag)
 
 and symptomEndIdentifyCheckForAlphaBetaAndT().
 
