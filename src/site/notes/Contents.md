@@ -68,5 +68,6 @@
 	2. Symptom type of a symptom
 48. [[Topics/Custom text box for page navigation\|Custom text box for page navigation]]
 49. [[Topics/Sorting of symptoms based on superscript numbers\|Sorting of symptoms based on superscript numbers]]
-50. [[Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
-51. [[Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
+50. [[Topics/Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
+51. [[Topics/Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
+52. [[Topics/Import section additional concepts = Allen, Synonym, Bönninghausen\|Import section additional concepts = Allen, Synonym, Bönninghausen]]
