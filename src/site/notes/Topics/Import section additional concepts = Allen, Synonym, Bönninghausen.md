@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/import-section-additional-concepts-allen-synonym-boenninghausen/"}
 ---
 
+## **Concept as on date: Feb 18, 2023.**
 # Allen source Literatur/reference detection concept
 
 Allen sources are special kinds of sources where literatur/references are kept in the document in a different manner, which the program needs to understand and detect them and needs to assign the reference with the associated symptoms. Here is the example of a Allen source:
@@ -46,13 +47,13 @@ When we compare two sources these linked synonyms are also used in the compariso
 
 We can also add a synonym after importing a source. We need to open the symptom view link of that source and there we will find a Add synonym column for each symptom string with “+” icon button, clicking on this plus icon opens up a popup to add a new synonym for that symptom. And this way also we can add a synonym. i.e.:
 
-![Pasted image 20241015124904.png](/img/user/Pasted%20image%2020241015124904.png)
+![Pasted image 20241015124904.png](/img/user/assets/Pasted%20image%2020241015124904.png)
 
-![Pasted image 20241015124911.png](/img/user/Pasted%20image%2020241015124911.png)
+![Pasted image 20241015124911.png](/img/user/assets/Pasted%20image%2020241015124911.png)
 
 When there is a source which is already imported, and after importing a source we add new synonyms. In this scenario we get an “update” button activated in the materia medica page synonym column with all sources rows which need to be updated with the latest synonym database.
 
-![Pasted image 20241015124921.png](/img/user/Pasted%20image%2020241015124921.png)
+![Pasted image 20241015124921.png](/img/user/assets/Pasted%20image%2020241015124921.png)
 
 Clicking on the “update” button/link of the synonym column(as shown in above screenshot) of a particular source, on the successful completion of the update process that particular source gets updated with the latest synonym database.       
 
@@ -156,7 +157,7 @@ To import a Bönninghausen source we go the Bönninghausen page by clicking on t
 
 Here in this page, we select the Arznei/Remedy and Language for the import process and then copy the Bönninghausen source document content and paste it in the text editor for import. After that we click on the Submit button to import the source. After the source getting imported successfully, we get the source information/data listed in the below table on the same page. i.e.
 
-![Pasted image 20241015125154.png](/img/user/Pasted%20image%2020241015125154.png)
+![Pasted image 20241015125154.png](/img/user/assets/Pasted%20image%2020241015125154.png)
 
 Here in the imported source information row, we get delete option, to delete a imported source we have to check the check box of that source in the first column of the table and have click on the dustbin icon provided on the table heading row first column and then have to follow the instruction.
 
