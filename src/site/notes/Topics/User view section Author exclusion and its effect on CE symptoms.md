@@ -11,14 +11,24 @@ Here when we have a CE symptom in the user view section and we exclude the autho
 
 When we deselect an author form the user view filtration options section, through function “fetchExcludedAuthors()” we fetch the deselected authors, Then we collect the source/quelle ids of the deselected authors with the help of the author and source/quelle relationship table “quelle_autor”. Now we have the quelle_id(s) of the deselected/excluded authors. So now when displaying the symptoms we exclude the symptoms of these quelle_id(s).
 
-Now when the deselected author is a CE symptom’s author, here also we have the quelle_id(s) of the deselected author that we have collected following the same above-mentioned process. Here we exclude the symptoms from displaying which belongs to the these excluded authors quelle_id(s) as mentioned above,
-
-now for each symptom which are going to be displayed (means the symptom which don’t belongs to the excluded authors quelle_id(s)), with the help of function “fetchOriginalQuelleOfConnectedSymptom()” we collect the connect edited symptom’s quelle_id, if the displaying symptom is a CE symptom. Now again we check if this quelle_id is in excluded authors quelle_id(s), and If the result is yes, then we collect the previous state of this connect edited symptom with the help of the function “fetchCEdataOfSymptom()” and display this sate of the symptom to the user in the web browser,
+Now when the deselected author is a CE symptom’s author, here also we have the quelle_id(s) of the deselected author that we have collected following the same above-mentioned process. Here we exclude the symptoms from displaying which belongs to the these excluded authors quelle_id(s) as mentioned above,now for each symptom which are going to be displayed (means the symptom which don’t belongs to the excluded authors quelle_id(s)), with the help of function “fetchOriginalQuelleOfConnectedSymptom()” we collect the connect edited symptom’s quelle_id, if the displaying symptom is a CE symptom. Now again we check if this quelle_id is in excluded authors quelle_id(s), and If the result is yes, then we collect the previous state of this connect edited symptom with the help of the function “fetchCEdataOfSymptom()” and display this sate of the symptom to the user in the web browser,
 
 Here also we remove the excluded author’s part from the source name of the displaying symptom in the user view section with the help of function “getQuelleAbbreviation()”.        
 
-Related scripts:
+### Updated:
+We take the sources related to the authors in `quelleAsPerAutorArr` PHP variable. PHP function `fetchMultipleOriginalQuelleOfConnectedCESymptom` gives id from pre comparison table and the original source id of the CE connected with that initial in key-value pairs where values are array, sorted as per the latest CE connection. 
 
+The latest CE active will always be shown unless the author related to the connected CE is excluded.
+The returned data from PHP function `fetchMultipleOriginalQuelleOfConnectedCESymptom` is kept in variable `fetchCeInfo` and is then sent as input parameter to PHP function `fetchCEdataOfSymptom`. 
+
+If the `fetchCeInfo` is empty then data is retrieved from `BeschreibungFull_de` and `BeschreibungFull_en` columns  in the current completed table. 
+
+If the `fetchCeInfo` has values which mean CE is active with the initial symptom and it is not excluded then data is fetched with the help of `table_name` column in the `pre_comparison_master_data` SQL table.
+
+Other flags used in the `fetchCEdataOfSymptom` function are `ceConnectionExists` and `lang`.
+
+Related scripts:
+```
 dev-exp/functions.php
 
 dev-exp/user-view/index.php
@@ -26,3 +36,4 @@ dev-exp/user-view/index.php
 dev-exp/user-view/user-views/symptom-list.php
 
 dev-exp/user-view/user-includes/user-functions.php
+```
