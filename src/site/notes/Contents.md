@@ -71,3 +71,4 @@
 50. [[Topics/Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
 51. [[Topics/Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
 52. [[Topics/Import section additional concepts = Allen, Synonym, Bönninghausen\|Import section additional concepts = Allen, Synonym, Bönninghausen]]
+53. [[Topics/Symcom Master Data Guide, API included\|Symcom Master Data Guide, API included]]
