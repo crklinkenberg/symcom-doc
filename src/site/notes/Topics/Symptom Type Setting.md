@@ -15,9 +15,8 @@ For symptom origins, the options that can be assigned are:
 ![Pasted image 20240423163952.png](/img/user/assets/Pasted%20image%2020240423163952.png)
 
 Technical Details:
+1. The UI is controlled by `symptom-type-and-origin.php` script located under directory `source-settings`. The population of sources is done by `api/book.php` inside this script.
+2. PHP variables `symptomTypeOptions` fetches saved data for symptom type HTML form with id `symptom_types`.
+3. When the HTML form is saved, it is handled by the Laravel `SourceController`. The method responsible for this operation is `saveSourceSpecificSymptomTypeAndSymptomOriginSetting()`.
+4. Model associated: `SourceSpecificSymptomSetting`.
 
-1. "source-settings/quelle-settings/index-symptom-type.php" is the form page where input is done with the help of "quelleSettings.js" script.
-    
-2. The form data are controlled by the "QuelleController.php" script. The function involved is "saveQuelleSymptomTypeSettings()".
-    
-3. The data taken are saved in the "quelle_symptom_settings" sql table in the database.
