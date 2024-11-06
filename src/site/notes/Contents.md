@@ -3,7 +3,8 @@
 ---
 
 
-1. [[Topics/Symcom Developer Guide (Work Chart)\|Symcom Developer Guide (Work Chart)]]
+1. [[Topics/Symcom Setup Details\|Symcom Setup Details]]
+2. [[Topics/Symcom Developer Guide (Work Chart)\|Symcom Developer Guide (Work Chart)]]
 	a. Source Import
 	b. Admin Panel
 	c. Comparison Process
