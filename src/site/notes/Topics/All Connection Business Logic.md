@@ -5,17 +5,15 @@
 
 For ongoing connection:
 
-  
-
 1. Comparing symptom after connect, further connect can be done with that symptom appearing under other initials.
     
-2. Comparing symptom after connect, further connect-edit, paste and paste-edit cannot be done with that symptom appearing under other initials.
+2. Comparing symptom after connect, further paste and paste-edit cannot be done with that symptom appearing under other initials.
     
 3. Comparing symptom after connect-edit, further connect can be done with that symptom appearing under other initials.
     
-4. Comparing symptom after connect-edit, further connect-edit, paste and paste-edit cannot be done with that symptom appearing under other initials.
+4. Comparing symptom after connect-edit, further paste and paste-edit cannot be done with that symptom appearing under other initials.
     
-5. Multiple connect-edit cannot be done under same initial.
+5. Multiple connect-edit can be done under same initial.
     
 6. Comparing symptom after paste, further connect, connect-edit, paste and paste-edit cannot be done with that symptom appearing under other initials.
     
@@ -46,8 +44,6 @@ For previous connection:
     
 
 Important Points on Disconnection of Edited Connections:
-
-  
 
 1. If an edited connection is disconnected that is if disconnection is done on connect-edit, swap connect edit connections then the symptom will go back to its previous state, which means previous grading which was effective on the symptom before that connection will be active.
     
