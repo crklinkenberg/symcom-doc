@@ -7,6 +7,7 @@ Last Update: April, 2024.
 Getting Started:
 Below are some important sections which help understand the Symcom Project and its work structure.
 
+To locally setup symcom follow instructions from: [[Topics/Symcom Local Setup Details\|Symcom Local Setup Details]]
 #### **Overview**:
 The site [www.reference-repertoy.com](http://www.reference-repertory.com) is the gateway to the main administrator panel. Upon logging in, addition of new books, new magazines, access to existing books, magazines, and grading configuration for fonts of sources, including details of medicines, authors, publishers, and tester (provers) can be found and edited.
 
@@ -14,18 +15,25 @@ The admin panel is also provided with an import section for new source import. O
 
 Below are some important German words and its English translation for better understanding of the full document.
 
+```
+The backend code has been changed to english from german versions. There can still be german words in many parts of the documentation, readers are advised to follow up the below list to avoid any confusion.
+```
+
 | German word              | _Translated to English_ |
 | ------------------------ | ----------------------- |
 | 1.      Quelle           | _Source_                |
-| 2.      Arznei           | _Drug_                  |
+| 2.      Arznei           | _Medicine, Remedy_      |
 | 3.      Prüfer           | _Tester_                |
-| 4.      Literaturquellen | _Literature reference_  |
-| 5.      Beschreibung     | _Description_           |
+| 4.      Literatur        | _Reference_             |
+| 5.      Literaturquellen | _Literature reference_  |
+| 6.      Beschreibung     | _Description_           |
+| 7.      Kursiv           | _Cursiv, Italic_        |
+| 8.      Fett             | _Bold_                  |
 
 For a full detailed understanding of the technical aspects, this documentation is provided with a technical guide section.
 
 #### **Symptom Import**:
-Imports of new symptoms to existing sources are done in this section. Import settings for Quelle, Arznei and Prüfer are to be filled by the user. Symptoms should be pasted from Microsoft Word document in the text editor.
+Imports of new symptoms to existing sources are done in this section. Import settings for sources, medicine and tester are to be filled by the user. Symptoms should be pasted from Microsoft Word document in the text editor.
 
 Certain rules are there according to which import of symptoms is processed. The program analyses the imported symptoms and saves them according to the rules, confirmations for unrecognized patterns is also done by the program.
 
