@@ -3,7 +3,7 @@
 ---
 
 
-When symptoms are imported to the sources, for identification of different fields like Prüfer, remedy, author, comment, date etc. the program follows certain rules. These rules are also important when patterns are identified within the symptom text and user is asked questions for approval.
+When symptoms are imported to the sources, for identification of different fields like tester, medicine, author, comment, date etc. the program follows certain rules. These rules are also important when patterns are identified within the symptom text and user is asked questions for approval.
 
 These rules are:
 
