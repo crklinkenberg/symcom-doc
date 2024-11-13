@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/automatic-symptom-connection-process/"}
 ---
 
+#comparison 
 
 This process is available in the comparison process where an editor can choose to connect the highest matched comparative with the initial symptoms choosing a minimum percentage as lower limit for the automatic connection. Automatic connection only does normal connect connection.
 
