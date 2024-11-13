@@ -5,7 +5,7 @@
 # Symcom Developer Guide
 Last Update: April, 2024.
 #### **Getting Started:**
-Welcome to the Symcom Developer Guide! If you're looking for information on individual topics, please follow the contents from the side bar navigation. Continue reading for an introduction to the documentation, Import Process, Comparison, Connections and more!
+Welcome to the Symcom Developer Guide! If you're looking for information on individual topics, please follow the contents or topics from the side bar navigation. Continue reading for an introduction to the documentation, Import Process, Comparison, Connections and more!
 
 #### **How to use these docs:**
 It is advised to follow the documentation along with the program running live or in local machine. Following and navigating through the scripts along with the technical descriptions provided here will help better understand the technical insights. 
