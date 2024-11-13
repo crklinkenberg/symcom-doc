@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/all-connection-business-logic/"}
 ---
 
+#comparison 
 
 For ongoing connection:
 
