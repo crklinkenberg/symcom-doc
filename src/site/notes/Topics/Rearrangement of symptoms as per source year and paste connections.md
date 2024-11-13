@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/rearrangement-of-symptoms-as-per-source-year-and-paste-connections/"}
 ---
 
+#comparison 
 
 Whenever comparative symptoms are pasted or paste-edited, the symptoms then appear under its parent in further comparisons.
 
