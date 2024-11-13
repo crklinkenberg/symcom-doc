@@ -17,122 +17,153 @@ The whole project is controlled with three different versions. Below are their d
 
 Source Import:
 ![Import WorkFlow.png](/img/user/assets/Import%20WorkFlow.png)
-Upon submission of the import form, whole functionality of import, export and saving of symptoms according to the rules is performed by the dev-exp/index.php page.
+Upon submission of the import form, whole functionality of import, export and saving of symptoms according to the rules is performed by the `dev-exp/index.php` page.
 
-All PHP functions can be found in dev-exp /functions.php page.
+All PHP functions can be found in `dev-exp /functions.php` page.
 
 Font conversion of the symptoms are also done during the process of import, but functioning and implementation of  full font conversion is explained in the next section.
 
 As showed in the above figure (Fig 1), the following processes takes place:
 
-1. Submission: The user selects import settings, language, Arznei, quelle, Prüfer and pastes the symptoms from Microsoft Word document to the text editor. Upon submission, the program checks for any error with validations, if errors are found, the program shows an error in the main import page.
+1. Submission: The user selects import settings, language, Medicine, Source, Tester and pastes the symptoms from Microsoft Word document to the text editor. Upon submission, the program checks for any error with validations, if errors are found, the program shows an error in the main import page.
 
 2. Initial Processing: The symptom text is taken as a string, cleaned and kept as an element inside an array () whenever a line break is found.
-	1. The program checks if symptoms are already added to the mentioned source by searching for records in the “quelle_import_master” and “temp_ quelle_import_master” SQL tables in the database. If any errors are found in this process, the program shows error in the main page, else it continues for the next steps.
-3. Pattern Identification: The array is iterated and for each element, the first and last character is taken out. The first character is crucial because this helps the program to identify different patterns(like symptom number, graduation, time, prover etc.) within the symptom text. Similarly, the last bracketed string is also processed for pattern identification.
+	1. The program checks if symptoms are already added to the mentioned source by searching for records in the `import_source_settings` and `itemp_ import_source_settings` SQL tables in the database. If any errors are found in this process, the program shows error in the main page, else it continues for the next steps.
+3. Pattern Identification: The array is iterated and for each element, the first and last character is taken out. The first character is crucial because this helps the program to identify different patterns(like symptom number, graduation, time, tester etc.) within the symptom text. Similarly, the last bracketed string is also processed for pattern identification.
 
 The program also processes the symptom text strings with font configuration of the sources. Hence, cleaning, trimming and addition of new HTML tags also happens simultaneously in this step.
 
-- The symptom text is kept in a PHP variable “Beschreibung”. Different Beschreibung versions are stored in the SQL table.
-	- The field “beshurbamg_plain” stores simple text of the symptom without any text formatting or any customized HTML tag.
-	- The field “beshurbang_original” contains symptom text and if the imported text has bold text format then it is converted to sperschaft (space).
-	- The field “beshurbag” contains symptom text as it is from its original document.
-	- The field “beshurbung_full” contains symptom text with all ending brackets.
-	- The field “searchable_text” contains symptom text without the ending brackets.
+- The symptom text is kept in a PHP variable `Beschreibung`. Different `Beschreibung` versions are stored in the SQL table.
+	- The field `description_de_in_document` and  `description_en_in_document` contains symptom text as it is from its original document.
+	- The field `description_de_with_custom_tags` and `description_en_with_custom_tags` contains symptom text with all ending brackets.
 
-- For extraction of Prüfer data from the string, the program first checks if any word starts with @P, if many  strings for Prüfer are found then all values are taken in a string and are separated by a delimiter “{#^#}”.
+- For extraction of Tester data from the string, the program first checks if any word starts with @P, if many  strings for Tester are found then all values are taken in a string and are separated by a delimiter “{#^#}”
+
+	-The `lookupPruefer()` function, searches for the processed Tester in the database tables. If values for Tester are not found, then a PHP flag is used, which is then used later for approval of the pattern from the user. According to the rules a priority value is also set which helps the program to identify the string and ask questions regarding its approval from the user.
+	The final values for Tester is stored in an associative array for further use in the program.
     
-- Similar process also takes for Literaturquellen that is @L. Here “lookupLiteratureReference()” function is used for searching the processed string in the database table.
+- Similar process also takes for `Literaturquellen/Source Literature`  that is @L. Here `lookupLiteratureReference()` function is used for searching the processed string in the database table.
     
-- For @N, which is a pattern to identify symptom number, first the program extract the strings between “( )” parenthesis and are then checked whether it is numeric or not. The final string is stored in “temp_quelle_import_test” SQL table under field “Symptomnummer”. If any mismatch is found, then the PHP flag “isSymptomNumberMismatch” is used for approval from the user at the end of Submission.
+- For @N, which is a pattern to identify symptom number, first the program extract the strings between “( )” parenthesis and are then checked whether it is numeric or not. The final string is stored in `itemp_symptoms` SQL table under field `symptom_number`. If any mismatch is found, then the PHP flag `is_symptom_number_mismatch` is used for approval from the user at the end of Submission.
     
 - Other patterns with “ @ ” in the beginning of string  and their respective meanings are mentioned below.
-    @A:Remedy
-    @AT:Similar remedy, Similar symptom text (e.g. Opi., during the day)
-    @TA:Similar symptom text, Similar remedy (e.g. small boils in crops, Sulph.)
-    @L:No Author, Aepli sen. in Hufeland Journ. YYV. (when there is no author reference) @U:Unclear(Unklarheit) @F:Footnote(Fußnote) @T:Text/Symptom text @Z:Time @K:Chapter (Kapitel) @UK:Subchapter @UUK:Sub Subchapter @S:Page  @C:Comment(Kommentar) @V:Hint(Verweiss) @G:Grading/Classification(Graduierung)
-    All the extracted values from the patterns mentioned above are stored in “temp_quelle_import_test” SQL table in their respective fields.
+```
+@A:Medicine
+@AT:Similar medicine, Similar symptom text (e.g. Opi., during the day)
+@TA:Similar symptom text, Similar medicine (e.g. small boils in crops, Sulph.)
+@L:No Author, Aepli sen. in Hufeland Journ. YYV. (when there is no author reference) 
+@U:Unclear(Unklarheit) 
+@F:Footnote(Fußnote) 
+@T:Text/Symptom text 
+@Z:Time 
+@K:Chapter 
+@UK:Subchapter 
+@UUK:Sub Subchapter 
+@S:Page  
+@C:Comment(Kommentar) 
+@V:Hint(Verweiss) 
+@G:Grading/Classification(Graduierung)
+```
+ All the extracted values from the patterns mentioned above are stored in `itemp_symptoms` SQL table in their respective fields.
     
-- The symptom-pruefer relationship is stored inside “temp_symptom_pruefer” table.
-- The pruefer details is stored in “temp_pruefer” table.
-- If no approval for pruefer is required then it is stored in “temp_approved_pruefer” table.
-- Remedy is stored in “temp_remedy” table.
-- “Symptom and literature reference” relationship is stored in “temp_symptom_reference” table.
-- The literature reference details is stored in “temp_reference” table.
-- If no approval for literature reference is required then it is stored in “temp_approved_reference” table.
-- Need for approval is searched in “temp_quelle_import_test” table, if no approval is needed then following steps takes place, else redirected to main page for asking questions.
-	- Insertion takes place from “temp_quelle_import_master” to “quelle_import_master”.
-	- Relationship betweeen  arznei and quelle is stored in “arznei_quelle” table.
-	- Insertion of symptom text takes place in “quelle_import_test” from “test_quelle_import_test”.
-	- Relationship between symptom-pruefer is stored in “symptom_pruefer” table.
-	- Relationship between symptom-reference is stored in “symptom_reference” table.
-	- Pruefer, remedy and reference values are finally stored to pruefer, remedy, reference tables from their temporary tables.
-- First checks for approval of any pre defined tags like @P, @L, @K etc.
-- Then checks for priority of pruefer, remedy, part of symptom, symptom edit, etc.
-- According to the rules, the program asks questions for each of the categories based on priority in a pop-up. This pop up contains an HTML form which sends the user input to PHP pages with prefix “approve” in the file name, like: approve-as-pruefer.php.
-- The pop up will continue appearing, till user approves it with yes, no or DO(direct order) button. The DO(direct order) helps the user to manually select the category in which the unidentified pattern belong.
-	After successful insertion, data from temporary tables are deleted.
-- Bücher: contains details of all the sources. Addition of new source can also be done here.
-    Related SQL tables:
-	- quelle: stores all quelle data including herkunft_id, verlag_id. Here, the field quelle_type_id=1.
-	- quelle_pruefer:stores pruefer relating to that quelle.
-	- quelle_autor:stores author relating to that quelle.
-	- quelle_grading_settings:grading setting of that quelle for font display.
-- Zeitschriften: contains details of all the sources but sources are categorized as magazines.
-    Related SQL tables: same as previous but in quelle table, the field quelle_type_id = 2.
-- Arzneien: details of all the arznei.
-    Related SQL tables:
-	- arznei: stores all arznei data.
-	- arznei_autor: relationship between arznei and autor.
-	- arznei_quelle: relationship between arznei and quelle.
-- Autoren: details of all the authors.
-    Related SQL tables: autor: stores all author data.
-- Prüfer: details of all the proofers.
-    Related SQL tables: pruefer.
-- Herkunft: details of origin.
-    Related SQL tables: herkunft.
-- Verlage: details of publishers.
-    Related SQL tables: verlage.
-- Literatur: details of literature.
-    Related SQL tables: reference.
-- Grade Schriftarten: This is the global grading setting menu. Here different text formats like Normal, Sperrschrift, Kursiv Sperrschrift etc are given unique values like 1,2,3,etc.
-    Related SQL tables:
-	- global_grading_sets: stores value whether settings is for font or colored.
-	- global_grading_settings: stores the values for different font formats like normal, kursiv, bold etc.
-	- global_grading_set_values: contains IDs of all font formats.
+- The symptom-tester relationship is stored inside `itemp_symptom_tester` table.
+- The tester details is stored in `itemp_testers` table.
+- If no approval for tester is required then it is stored in `itemp_approved_testers` table.
+- Medicine is stored in `itemp_medicines` table.
+- “Symptom and literature reference” relationship is stored in `itemp_symptom_literatures` table.
+- The literature reference details is stored in `itemp_literatures` table.
+- If no approval for literature reference is required then it is stored in `itemp_approved_literatures` table.
+- Need for approval is searched in `itemp_symptoms` table, if no approval is needed then following steps takes place, else redirected to main page for asking questions.
+	- Insertion takes place from `itemp_import_source_settings` to `import_source_settings`.
+	- Relationship between  medicine and source is stored in `rel_source_medicine` table.
+	- Insertion of symptom text takes place in `symptoms` from `itemp_symptoms`.
+	- Relationship between symptom-tester is stored in `rel_symptom_tester` table.
+	- Relationship between symptom-literatures is stored in `rel_symptom_literature` table.
+	- Tester, medicine and literature values are finally stored to testers, medicines, literatures tables from their temporary tables.
+- If there is need for approval
+	- First checks for approval of any pre defined tags like @P, @L, @K etc.
+	- Then checks for priority of tester, medicine, part of symptom, symptom edit, etc.
+	- According to the rules, the program asks questions for each of the categories based on priority in a pop-up. 
+	- The pop up will continue appearing, till user approves it with yes, no or DO(direct order) button. The DO(direct order) helps the user to manually select the category in which the unidentified pattern belong.
+
+After successful insertion, data from temporary tables are deleted.
+
+
+4. Storing in temporary tables: The data from the symptom text including pattern approval request and  priorities are all stored in an associative array and is then inserted into `itemp_symptoms` SQL table.
+    
+    Approval for unidentified patterns: When approval is required for strings inside brackets at the end of the symptom text or when no records of tester, literature etc. is found then the page is reloaded with a GET parameter “master”. This helps in identification of the source from `itemp_symptoms` table. The program:
+    
+    Final processing: In this step, final insertion of the symptom in `symptoms` SQL table takes place and all categories of the symptom text like tester, medicine, literature, date, etc. are stored in different fields of the table.
+    
+### Admin panel: 
+Handling of all Symcom data can be done in this admin panel. This main dashboard consist of:
+1. Comparison: which is a link to the source comparison page.
+2. Master Data: this option handles all the data.
+3. Users: list of users.
+4. Import: which is a link to the import page.
+#### Master Data:   
+This menu has different option for handling of data stored in the SQL databases.
+- Books: contains details of all the sources. Addition of new source can also be done here.
+
+```
+Related SQL tables:
+sources: stores all source data including source_origin_id, publisher_id. Here, the field source_category = 1 for books.
+
+rel_source_tester: stores tester relating to that source.
+
+rel_source_author: stores author relating to that source.
+
+source_grading_settings:grading setting of that source for font display.
+```
+
+- Magazines: contains details of all the sources but sources are categorized as magazines.
+
+```
+Related SQL tables:
+same as previous but in sources table, the field source_category = 2.
+```
+- Medicines: details of all the medicines.
+	Related SQL tables:
+	- medicines: stores all medicine data.
+	- `rel_source_medicine`: relationship between medicine and quelle.
+- Authors: details of all the authors.
+	Related SQL tables: 
+	authors: stores all author data.
+- Tester: details of all the proofers/testers.
+	Related SQL tables: testers.
+- Source Origin: details of origin.
+    Related SQL tables: `source_origins`.
+- Publishers: details of publishers.
+    Related SQL tables: publishers.
+- Literatures: details of literature.
+    Related SQL tables: literatures.
+- Grade Settings: This is the global grading setting menu. Here different text formats like Normal, `Sperrschrift (double spaced), Kursiv Sperrschrift` etc. are given unique values like 1,2,3,etc. More technical details on grade settings: [[Source Settings\|Source Settings]]
+
+```
+Related SQL tables:
+global_grading_sets: stores value whether settings is for font or colored.
+
+global_grading_settings: stores the values for different font formats like normal, kursiv, bold etc.
+
+global_grading_set_values: contains IDs of all font formats.
+```
+	
 - Setting (Font Conversion): This setting menu has select option for different customized tag names with values 1,2,3 etc.
     A source can be configured with a font setting and this font configuration is effective when symptoms are displayed under that source. Full steps of font conversion are shown below:
-	The “lookupPruefer()” function, searches for the processed Prüfer in the database tables. If values for Prüfer are not found, then a PHP flag is used, which is then used later for approval of the pattern from the user. According to the rules a priority value is also set which helps the program to identify the string and ask questions regarding its approval from the user.
-	
-	The final values for Prüfer is stored in an associative array for further use in the program.
+    1. Symptom saved in the symptoms SQL table under column `description_de_with_custom_tags` and `description_en_with_custom_tags` is passed through PHP function `convertTheSymptom()` when symptom listing is processed.
+	2. The program searches for patterns by checking the first and last character in a string. It also detects other characters like °(degree) or *(asterisk).
+	2. Detected patterns are passed to different font formatting functions which returns the string with encapsulated customized HTML tags.
+	3. The symptom text is saved in the database.
+	4. Grade Setting menu in the admin panel has grading values for symptoms with text formats like Normal, Normal within parentheses, Normal begin with degree etc. for each source.
+	    
+	    Now, if the source has been assigned grades via Grade Settings Symcom Menu, the grade details for the source is saved in `source_grading_setting` SQL table. If value for text format “Bold” grade is set as “3" from the Gradings Menu and if in the source grading setting, the HTML form option for "Normal begin with asterisk" option is set with value “3”, then when the symptom is displayed for that source, if the symptom text is in normal and starts with an asterisk, then due to global grading font setting, the font text will be converted and the word will be displayed in bold.
+```
+Related SQL tables:
+source_grading_settings: Settings for all custom HTML tags for particluar sources is stored here.
 
-4. Storing in temporary tables: The data from the symptom text including pattern approval request and  priorities are all stored in an associative array and is then inserted into “temp_quelle_import_test” SQL table.
-    
-    Approval for unidentified patterns: When approval is required for strings inside barckets at the end of the symptom text or when no records of prufer, reference etc is found then the page is reloaded with a GET parameter “master”. This helps in identification of the source from “temp_quelle_import_test” table. The program:
-    
-    Final processing: In this step, final insertion of the symptom in “quelle_import_test” takes place and all categories of the symptom text like pruefer, remedy, refernce, date, etc are stored in different fields of the table.
-    
-    Admin panel: Handling of all Symcom data can be done in this admin panel. This main dashboard consist of:
-    
-1. Vergleich: which is a link to the source comparison page.
-2. Stammdaten: this option handles all the data.
-3. Benutzer: list of users.
-4. Import: which is a link to the import page.
-Stammdaten:   This menu has different option for handling of data stored in the SQL databases.
-1. Symptom is imported, the user clicks submit and the program starts processing the symptom text.
-2. The program searches for patterns by checking the first and last charcter in a string. It also detects other characters like °(degree) or *(asterisk).
-3. Detected patterns are passed to different font formatting functions which returns the string with encapsulated customized HTML tags.
-4. The symptom text is saved in the database.
-5. Setting menu in the admin panel has grading values for all the customized tags like “parentheses-normal”,” asterisk-grossbold”,” non-asterisk-degree-bold” etc for each source.
-    
-    Now, if the global grading setting , value for text format “Bold” is given as “3" and if in the settings menu, “asterisk-grossbold” option is set with value “3”, then when the symptom is displayed for that source, if the symptom text contains words with tags “asterisk-grossbold” that is `< asterisk-grossbold >someword</ asterisk-grossbold >` then due to global grading font setting, the tags will be converted and the word will be displayed in bold.
-    
-6. All customized tags are first converted to HTML tags like `<em>,<strong>`  when the program first cleanses the symptom text during the import process, if the source has grading settings configured then only conversion of the tags according to the font settings occurs otherwise not.
-    
-    Related SQL tables:
-	Example: If strings like *some word is detected then the program identifies it to be a bold word with asterisk, hence, it converts the string into `<asterisk-bold>some word</asterisk-bold>`.
-	- quelle_grading_settings: Settings for all custom HTML tags for particluar sources is stored here.
-	- symptom_grading_settings: Settings for all custom HTML tags for particluar symptoms is stored here.
+symptom_grading_settings: Settings for all custom HTML tags for particluar symptoms is stored here.
+```
+
 
 ---
 
@@ -142,7 +173,7 @@ Whole process of comparison can be divided into three steps:
 2. Connections among quelle, that is connect, paste, connect-edit, paste-edit.
 3. Saving of the comparison sources.
 4. Comparison among quelle:
-    For every comparison, an SQL table is created using the user setting like arznei and language. The whole comparison is done in 0% and stored in the database.
+    For every comparison, an SQL table is created using the user setting like medicine and language. The whole comparison is done in 0% and stored in the database.
     
     Work Flow is mentioned in the below figure.
 ![comparison.jpg](/img/user/assets/comparison.jpg)
@@ -152,16 +183,16 @@ As showed in the above figure (Fig 2), the following processes takes place:
 	1. The percentage(cut-off) in which the comparison would be done.
 	2. The language for the sources, that is German or English.
 	3. Comparison option: compare only symptoms or compare whole symptom text(where last string words with brackets will also be considered).
-	4. Arznei selection.
-	5. Initial source: according to arznei, initial sources will be displayed in the select box.
-	6. Comparison source: according to arznei, comparing sources will be displayed in the select box.
+	4. Medicine selection.
+	5. Initial source: according to medicine, initial sources will be displayed in the select box.
+	6. Comparison source: according to medicine, comparing sources will be displayed in the select box.
 
 - Initial processing: The compare setting submitted is processed by the program with the help of an id “symptom_comparison_form” and below steps are processed:
 	1. Form validations are done, if no errors are found then an ajax request is sent to “check-if-comparison-table-exist.php” page. This page stores all the setting fields in an PHP SESSION variable with name “comparison_table_data”.
     
 	    This SESSION variable also stores:
 	- Comparison table name as:
-		"comparison_table_arzneiID_initialSourceID_comparingSourceIDs_language”
+		"comparison_table_medicineID_initialSourceID_comparingSourceIDs_language”
 		
     In above, the words in bold are the values taken from comparison setting menu.
     
