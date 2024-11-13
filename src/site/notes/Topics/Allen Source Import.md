@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/allen-source-import/"}
 ---
 
+#import 
 
 Allen Sources are special sources where symptoms have references linked to it. These references can also have provers who have worked with that particular literature.
 
