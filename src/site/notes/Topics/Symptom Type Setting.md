@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/symptom-type-setting/"}
 ---
 
+#general 
 
 Symptom Type Setting from Menu Point helps assign symptom properties to a particular source.
 
