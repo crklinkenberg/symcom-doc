@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/basic-rules-relating-to-connection-of-symptoms-in-comparison-page/"}
 ---
 
-
+#comparison 
 ##### PASTE EDIT RULES 
 
 **Rule 1 :** Paste Editing a Comparative Symptom in some section, will not change the same Comparative Symptom and Percentage in other sections.
