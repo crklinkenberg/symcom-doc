@@ -26,7 +26,7 @@
 7. [[Topics/Customized Array Creation for Initial Symptom Display and Customized Pagination\|Customized Array Creation for Initial Symptom Display and Customized Pagination]]
 8. [[Topics/Editor Privilege\|Editor Privilege]]
 10. [[Conversion of Grading During Display\|Conversion of Grading During Display]]
-11. [[Source Settings\|Source Settings]]
+11. [[Topics/Source Settings\|Source Settings]]
 12. [[Topics/Comparison status in different modes\|Comparison status in different modes]]
 13. [[Topics/Some jQuery variables and function name with their usages\|Some jQuery variables and function name with their usages]]
 14. [[Topics/Some PHP function name and their description\|Some PHP function name and their description]]
