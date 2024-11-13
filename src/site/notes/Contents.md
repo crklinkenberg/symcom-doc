@@ -9,7 +9,7 @@
 	b. Admin Panel
 	c. Comparison Process
 	d. Creation of comparison and related dynamic SQL tables.
-2. [[Source Import\|Source Import]]
+2. [[Topics/Source Import\|Source Import]]
 3. [[Topics/Connections among sources\|Connections among sources]]
 	a. Connect (Connection)
 	b. Connect (Disconnection)
@@ -25,7 +25,7 @@
 6. [[Topics/Listing of Initial Symptoms in the Comparison Page\|Listing of Initial Symptoms in the Comparison Page]]
 7. [[Topics/Customized Array Creation for Initial Symptom Display and Customized Pagination\|Customized Array Creation for Initial Symptom Display and Customized Pagination]]
 8. [[Topics/Editor Privilege\|Editor Privilege]]
-10. [[Conversion of Grading During Display\|Conversion of Grading During Display]]
+10. [[Topics/Conversion of Grading During Display\|Conversion of Grading During Display]]
 11. [[Topics/Source Settings\|Source Settings]]
 12. [[Topics/Comparison status in different modes\|Comparison status in different modes]]
 13. [[Topics/Some jQuery variables and function name with their usages\|Some jQuery variables and function name with their usages]]
