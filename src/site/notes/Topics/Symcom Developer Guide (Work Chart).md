@@ -2,18 +2,19 @@
 {"dg-publish":true,"permalink":"/topics/symcom-developer-guide-work-chart/"}
 ---
 
+#import #comparison
 
 Technical Help:
 The whole project is controlled with three different versions. Below are their details:
 1. Development:
 	Link: http://www.dev.reference-repertory.com
-	Database: development_repertory
+	Database: `development_repertory`
 2. Staging:
 	Link: http://www.stage.reference-repertory.com
-	Database: staging_repertory
+	Database: `staging_repertory`
 3. Production:
 	Link: http://www.reference-repertory.com
-	Database: production_repertory
+	Database: `production_repertory`
 
 Source Import:
 ![Import WorkFlow.png](/img/user/assets/Import%20WorkFlow.png)
@@ -86,15 +87,15 @@ The program also processes the symptom text strings with font configuration of
 	- According to the rules, the program asks questions for each of the categories based on priority in a pop-up. 
 	- The pop up will continue appearing, till user approves it with yes, no or DO(direct order) button. The DO(direct order) helps the user to manually select the category in which the unidentified pattern belong.
 
-After successful insertion, data from temporary tables are deleted.
-
+After successful insertion, data from temporary tables are deleted. 
 
 4. Storing in temporary tables: The data from the symptom text including pattern approval request and  priorities are all stored in an associative array and is then inserted into `itemp_symptoms` SQL table.
     
     Approval for unidentified patterns: When approval is required for strings inside brackets at the end of the symptom text or when no records of tester, literature etc. is found then the page is reloaded with a GET parameter “master”. This helps in identification of the source from `itemp_symptoms` table. The program:
     
     Final processing: In this step, final insertion of the symptom in `symptoms` SQL table takes place and all categories of the symptom text like tester, medicine, literature, date, etc. are stored in different fields of the table.
-    
+
+More details on the import process: [[Source Import\|Source Import]]
 ### Admin panel: 
 Handling of all Symcom data can be done in this admin panel. This main dashboard consist of:
 1. Comparison: which is a link to the source comparison page.
@@ -163,11 +164,11 @@ source_grading_settings: Settings for all custom HTML tags for particluar source
 
 symptom_grading_settings: Settings for all custom HTML tags for particluar symptoms is stored here.
 ```
-
+Details on the grading conversion function: [[Conversion of Grading During Display\|Conversion of Grading During Display]]
 
 ---
 
-**Comparison:**
+### **Comparison:**
 Whole process of comparison can be divided into three steps:
 1. Comparison between quelle(sources).
 2. Connections among quelle, that is connect, paste, connect-edit, paste-edit.
