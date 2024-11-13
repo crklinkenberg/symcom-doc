@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/unmarked-and-non-secure-connection-check-before-saving-technical-workflow/"}
 ---
 
+#comparison 
 
 PHP script “check-unmarked-symptoms.php” is associated with this task.
 
