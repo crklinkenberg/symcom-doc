@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/chapter-structure-creation-installation-modification-process/"}
 ---
 
+#chaptering 
 #### Chapter Structure Installation:
 
 Chapter Structure can be initially installed following the chapter classification python program.
