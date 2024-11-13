@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/import-section-additional-concepts-allen-synonym-boenninghausen/"}
 ---
 
+#import
 ## **Concept as on date: Feb 18, 2023.**
 # Allen source Literatur/reference detection concept
 
