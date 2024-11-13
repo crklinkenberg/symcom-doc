@@ -4,10 +4,13 @@
 
 # Symcom Developer Guide
 Last Update: April, 2024.
-Getting Started:
-Below are some important sections which help understand the Symcom Project and its work structure.
+#### **Getting Started:**
+Welcome to the Symcom Developer Guide! If you're looking for information on individual topics, please follow the contents from the side bar navigation. Continue reading for an introduction to the documentation, Import Process, Comparison, Connections and more!
 
-To locally setup symcom follow instructions from: [[Topics/Symcom Local Setup Details\|Symcom Local Setup Details]]
+#### **How to use these docs:**
+It is advised to follow the documentation along with the program running live or in local machine. Following and navigating through the scripts along with the technical descriptions provided here will help better understand the technical insights. 
+
+To locally setup Symcom follow instructions from: [[Topics/Symcom Local Setup Details\|Symcom Local Setup Details]]
 #### **Overview**:
 The site [www.reference-repertoy.com](http://www.reference-repertory.com) is the gateway to the main administrator panel. Upon logging in, addition of new books, new magazines, access to existing books, magazines, and grading configuration for fonts of sources, including details of medicines, authors, publishers, and tester (provers) can be found and edited.
 
@@ -19,18 +22,17 @@ Below are some important German words and its English translation for better und
 The backend code has been changed to english from german versions. There can still be german words in many parts of the documentation, readers are advised to follow up the below list to avoid any confusion.
 ```
 
-| German word              | _Translated to English_ |
-| ------------------------ | ----------------------- |
-| 1.      Quelle           | _Source_                |
-| 2.      Arznei           | _Medicine, Remedy_      |
-| 3.      Prüfer           | _Tester_                |
-| 4.      Literatur        | _Reference_             |
-| 5.      Literaturquellen | _Literature reference_  |
-| 6.      Beschreibung     | _Description_           |
-| 7.      Kursiv           | _Cursiv, Italic_        |
-| 8.      Fett             | _Bold_                  |
-| 9.     Auflage           | *Edition*               |
-|                          |                         |
+| German word         | _Translated to English_ |
+| ------------------- | ----------------------- |
+| 1. Quelle           | _Source_                |
+| 2. Arznei           | _Medicine, Remedy_      |
+| 3. Prüfer           | _Tester_                |
+| 4. Literatur        | _Reference_             |
+| 5. Literaturquellen | _Literature reference_  |
+| 6. Beschreibung     | _Description_           |
+| 7. Kursiv           | _Cursiv, Italic_        |
+| 8. Fett             | _Bold_                  |
+| 9. Auflage          | *Edition*               |
 
 For a full detailed understanding of the technical aspects, this documentation is provided with a technical guide section.
 
