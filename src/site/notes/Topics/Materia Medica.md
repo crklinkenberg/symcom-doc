@@ -2,10 +2,11 @@
 {"dg-publish":true,"permalink":"/topics/materia-medica/"}
 ---
 
+#general 
 
 Contains all the source information. Provide with a panel for custom search operation.
 
-Technical Details:
+### Technical Details:
 
 The search panel parameters are send with “POST” method.
 
@@ -19,13 +20,13 @@ The field “is_materia_medica” in “quelle” SQL table should be “1”.
 
   
 
-Comparison History:
+### Comparison History:
 
 History of comparison of source is present here. Page provided with a search panel for custom search.
 
 Whenever a comparison is saved by the supervisor, a copy of the latest comparison (with all connections) is saved in the history page. After a comparison is saved, it is then converted to a final state which becomes eligible for further comparisons. By going to the history page the supervisor can again reactivate the last states of the comparisons of that source in case any more repair is required. Reactivating makes the source comparable again.
 
-Technical Details:
+### Technical Details:
 
 SQL tables used: quelle_import_master, quelle, quelle_autor, autor, pre_comparison_master_data, pre_comparison_master_data_for_history
 
