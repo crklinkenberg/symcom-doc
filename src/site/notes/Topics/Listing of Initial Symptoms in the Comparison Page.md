@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/listing-of-initial-symptoms-in-the-comparison-page/"}
 ---
 
+#comparison 
 
 Listing of initial symptoms are dynamic. Not only the normal display but customized display of non secure connections and unmarked initials are all done in the “comparison.php” page using the `initialCustomListingModified($param, $db, $comparison_table, $page_start, $per_page_initial, $customized_array)` PHP function.
 
