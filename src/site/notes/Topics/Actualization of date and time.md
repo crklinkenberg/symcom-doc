@@ -2,22 +2,17 @@
 {"dg-publish":true,"permalink":"/topics/actualization-of-date-and-time/"}
 ---
 
+#general 
 
-Whenever any actions are taken in the comparison page like connect, paste, connect edit, paste edit, comment/footnote/ non secure/ marking operations etc or in the import page, the latest time and date in the materia medica and import tables are displayed.
-
-  
-
-Technical Help:
+Whenever any actions are taken in the comparison page like connect, paste, connect edit, paste edit, comment/footnote/ non secure/ marking operations etc. or in the import page, the latest time and date in the materia medica and import tables are displayed.
 
   
-
+### Technical Help:
 For updating of time “updateDateOfModifiedSources()” PHP function is used, this function takes the “quelle_id” as parameter  and make changes in the “stand” field of the “quelle_import_master” SQL table.
 
   
 
-Related PHP scripts:
-
-  
+Related PHP scripts:  
 
 - add-source-translation.php
     
