@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/custom-text-box-for-page-navigation/"}
 ---
 
+#comparison 
 
 Custom text box in the comparison page is used to navigate to the page when sources are big and large number of pages are shown in the comparison process.
 
