@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/marking-of-symptoms-technical-details/"}
 ---
 
+#comparison 
 
 Database: In the main comparison SQL table, the marking is kept in a field name “marked”. The value is “1” when marking is active and by default, the value is “0”.
 
