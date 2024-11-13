@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/chapter-classification-model-re-train/"}
 ---
 
+#chaptering 
 
 Chapter classification model re-training can be done uploading a `.txt` file containing the chapter name and symptoms in particular format. The format is like this:
 ```
