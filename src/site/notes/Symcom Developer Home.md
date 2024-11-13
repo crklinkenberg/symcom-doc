@@ -29,6 +29,8 @@ The backend code has been changed to english from german versions. There can sti
 | 6.      Beschreibung     | _Description_           |
 | 7.      Kursiv           | _Cursiv, Italic_        |
 | 8.      Fett             | _Bold_                  |
+| 9.     Auflage           | *Edition*               |
+|                          |                         |
 
 For a full detailed understanding of the technical aspects, this documentation is provided with a technical guide section.
 
