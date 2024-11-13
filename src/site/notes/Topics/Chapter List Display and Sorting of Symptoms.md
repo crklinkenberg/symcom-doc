@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/chapter-list-display-and-sorting-of-symptoms/"}
 ---
 
+#chaptering 
 #### Chapter List Display
 The `symptom-chapter-list.php` script displays the assigned symptoms in order of the chapter structure. At max ten chapters can be displayed in this web page, PHP variable `$perPageChapterHead` controls the chapter head display.
 
