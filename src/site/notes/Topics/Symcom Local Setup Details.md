@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/topics/symcom-local-setup-details/"}
 ---
 
-
 # Prerequisites
 
  + **Windows Operating System**
@@ -26,7 +25,7 @@
 
 Set-ExecutionPolicy RemoteSigned
 ```
-**#NOTE** 
+**NOTE** 
 > This will enable us to run the scripts.
 3. And then navigate to the **```Xampp htdocs```** location and clone the repository or place/paste your downloaded project here.  
    - **Example:** ```C:/xampp/htdocs```
@@ -49,7 +48,7 @@ Set-ExecutionPolicy RemoteSigned
    .\Script01.ps1
    ```
    
-**#NOTE** 
+**NOTE** 
 > Running the ```Script01.ps1``` will asks for the location of the **Xampp directory** ```which is```.<br /><br />
    ```
    C:/xampp/
