@@ -3,13 +3,13 @@
 ---
 
 
-Technical Details:
+#import 
+### Technical Details:
 
 Hering Sources are special sources with bar and pi symbols in the beginning of the string.
 
 In some symptoms theta θ symbol which will appear at the end of the symptom string. The parts after the theta symbol including the symbol itself should not be affected by the grading process. Hering Sources will not contain different text formatting other than plain after the theta part.
 
-  
 
 For this, "symptom_theta_diagnosis" SQL table is created.
 
