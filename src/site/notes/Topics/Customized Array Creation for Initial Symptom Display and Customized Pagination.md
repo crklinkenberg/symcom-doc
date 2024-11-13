@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/customized-array-creation-for-initial-symptom-display-and-customized-pagination/"}
 ---
 
+#comparison 
 
 This array `$customizedInitialArray[]` is sent to “initialCustomListingModified()” PHP function for final display of initial symptoms in the comparison page. This array is a return from different functions which are responsible for customized filtration of symptoms in the comparison page.
 
