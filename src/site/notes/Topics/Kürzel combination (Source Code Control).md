@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/kuerzel-combination-source-code-control/"}
 ---
 
+#general 
 
 Source code is made combining abbreviations of authors + source name abbreviation 3 + band + year of the source.
 
