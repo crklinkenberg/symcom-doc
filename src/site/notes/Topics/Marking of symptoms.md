@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/marking-of-symptoms/"}
 ---
 
+#comparison 
 
 In the comparison listing, with all initial symptoms there is a check box for marking. This is for quality assurance of the whole comparison during editing. Marking rules:
 
@@ -36,3 +37,5 @@ Back-end:
 - When marking checkbox is checked or unchecked by the user, ajax call is made to “update-marking-symptoms.php” script. Initial id, comparison table and marked Value (0 or 1) is sent as parameters here.
     
 - This scripts updates the “marked” field in the comparison table.
+
+More Details: [[Topics/Marking of Symptoms (Technical Details)\|Marking of Symptoms (Technical Details)]]
