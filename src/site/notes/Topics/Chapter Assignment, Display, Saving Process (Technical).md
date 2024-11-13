@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/chapter-assignment-display-saving-process-technical/"}
 ---
 
+#chaptering 
 #### Automatic assignment process:
 Chapters are automatically assigned by the chapter classification python program. 
 The python program is called via an API through PHP function `fetchChapterForSymptom()`. This function in turn call `recursionArr()` PHP function which separates the primary chapters, primary more chapters and secondary chapters based on the API response.
