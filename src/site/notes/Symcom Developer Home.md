@@ -68,3 +68,5 @@ Comparisons after proper inspection of non-secure connections and markings by th
 _NOTE: Chronological means ascending to descending here and this sorting order is only required in the final completed comparison version. During comparison, chronological order is not shown rather the latest connection is shown first under the initials in case of combined source comparisons.
 
 [[Contents\|Contents]] : Click to go through all the topics.
+
+Some topics are categories into tags for efficient searching. These tags include: `import, comparison, general, chaptering, userview`
