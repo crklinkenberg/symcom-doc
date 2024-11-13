@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/new-modification-in-normal-symptom-edit-ce-swap-ce/"}
 ---
 
+#comparison 
 
 We can normally edit a symptom form the symptom listing page of a source. While editing a symptom from the symptom listing page of the source, on clicking the edit icon button we get the symptom edit mask /popup.
 
@@ -23,7 +24,7 @@ In this popup also we have the settings tab where user can set or modify the gra
 
 Same way we also have the preview phase, where the user can see the result of the CE or SWAP CE edit, just before the final submission of the CE or SWAP CE process. Here also we can go back to correct our editing by clicking the go back button in the preview phase of the CE or SWAP CE popup. 
 
-**Technical Workflow:**
+### **Technical Workflow:**
 
 **Symptom edit:**
 
@@ -41,6 +42,7 @@ When we click on the Preview button on the CE or SWAP CE popup, we POST the popu
 
 When we finally Submit the CE or SWAP CE process, by clicking the submit button we POST the form data to “connect-edit-operation.php” PHP script, Here in this PHP script we store the connect information in database in the dynamic connection table of that comparison (i.e. comparison_table_34_2_257_de_connections). And we also store the individual grading setting data with the comparison ID in the database table “symptom_grading_settings” . Here comparison ID is stored in the “pre_comp_id” (by default it’s value is 0) column of the DB table “symptom_grading_settings”.
 
+```
 Related scripts:
 
 dev-exp/functions.php
@@ -60,3 +62,4 @@ dev-exp/connect-edit-exp.js
 dev-exp/get-preview-of-connect-edited-symptom.php
 
 dev-exp/connect-edit-operation.php
+```
