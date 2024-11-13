@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/user-view-section-author-exclusion-and-its-effect-on-ce-symptoms/"}
 ---
 
+#userview 
 
 In the user view section, we have our final symptom list displayed. Here we have option to exclude an author, according to which all symptoms of the excluded author will be removed from the displayed symptom list in the user view section.
 
