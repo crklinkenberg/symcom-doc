@@ -138,7 +138,7 @@ same as previous but in sources table, the field source_category = 2.
     Related SQL tables: publishers.
 - Literatures: details of literature.
     Related SQL tables: literatures.
-- Grade Settings: This is the global grading setting menu. Here different text formats like Normal, `Sperrschrift (double spaced), Kursiv Sperrschrift` etc. are given unique values like 1,2,3,etc. More technical details on grade settings: [[Source Settings\|Source Settings]]
+- Grade Settings: This is the global grading setting menu. Here different text formats like Normal, `Sperrschrift (double spaced), Kursiv Sperrschrift` etc. are given unique values like 1,2,3,etc. More technical details on grade settings: [[Topics/Source Settings\|Source Settings]]
 
 ```
 Related SQL tables:
