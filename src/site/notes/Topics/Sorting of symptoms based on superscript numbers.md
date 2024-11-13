@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/sorting-of-symptoms-based-on-superscript-numbers/"}
 ---
 
+#general 
 
 Sorting the symptoms according to the superscript (exponent) at the end of each symptom of a word file. After sorting, preprocessing of the symptoms in Word will be done. Only then it is added to `SymCom`.
 
