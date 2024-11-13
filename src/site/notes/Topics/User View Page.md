@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/user-view-page/"}
 ---
 
+#userview
 
 Comparisons worked upon and when finished can be sent for viewing purpose to the public / users. The supervisor in the Symcom website has the privilege to send the final version of the comparison from the materia medica page to the reference materia medica (RMM) page which is basically the materia medica for the users in the user view section.
 
