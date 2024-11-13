@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/chapter-assignment-modification/"}
 ---
 
+#chaptering 
 Any edits required for assignment chapters or to delete any assigned chapter, mode 1 of the chapter assignment process can be used.
 
 On click of Edit option in mode 1, new chapters can be selected from the drop downs. 
