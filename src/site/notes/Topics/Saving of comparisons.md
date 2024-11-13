@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/saving-of-comparisons/"}
 ---
 
-
+#comparison 
 When a comparison is saved, the HTML class “comparison-table-save-btn” is revoked. A pop up is displayed to confirm the editor’s input and then the program checks for unmarked initial symptoms or non secure connections with the help of “check-unmarked-symptoms.php” script via an ajax call. If any unmarked or non secure connections are found then the editor is notified with a pop up and then redirects the editor to the secure the connections for saving the comparison.
 
 If no unmarked or non secure connections are found then the save process is followed by the “savingComparison()” js function. This function submits the form with id “saveSubmit” and redirects to the main comparison page with HTTP method “POST”.
