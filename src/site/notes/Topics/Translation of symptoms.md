@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/translation-of-symptoms/"}
 ---
 
+#import #comparison 
 
 - Symptoms when imported to particular source, is imported using a language(either German or English).
     
