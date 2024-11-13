@@ -2,21 +2,18 @@
 {"dg-publish":true,"permalink":"/topics/display-of-connected-symptoms/"}
 ---
 
+#comparison 
+NOTE: 
+In case of single source comparisons, the connections are displayed in order like: connect edit first, then connect, then paste edit and then paste.
 
-NOTE: In case of single source comparisons, the connections are displayed in order like: connect edit first, then connect, then paste edit and then paste.
-
-  
 
 In the case of combined source comparisons, the connections are displayed as per the latest connection order. This combined source when saved and converted to final completed version, the chronological order that is sorting in order of years (older year to newer) takes place.
 
   
-
 Instant display of connected symptoms is controlled by individual scripts of connect.js, paste.js, connect-edit-exp.js, paste-edit.js.
 
-  
 
 Display of connected symptoms on load takes place with the help of “connectSave()” js function.
-
   
 
 Symptom ids are kept in js arrays when loaded according to source type: single or combined. This arrays are:
