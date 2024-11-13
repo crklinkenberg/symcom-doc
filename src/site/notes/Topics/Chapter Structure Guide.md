@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/topics/chapter-structure-guide/"}
 ---
 
-
+#chaptering
 ### Initiation of automatic chapter classification process:
 Chapters can be classified to the final completed version of the comparison by clicking on the button shown below:
 ![Pasted image 20240523170837.png](/img/user/assets/Pasted%20image%2020240523170837.png)
