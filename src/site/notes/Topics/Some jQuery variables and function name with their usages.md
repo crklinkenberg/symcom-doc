@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/topics/some-j-query-variables-and-function-name-with-their-usages/"}
 ---
 
+#comparison 
+
 | Variables                                                      | Usage                                                                                                                                         |
 | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | earlierConnectionExist                                         | Used as a flag variable for earlier connection existence.                                                                                     |
