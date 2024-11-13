@@ -2,8 +2,9 @@
 {"dg-publish":true,"permalink":"/topics/matched-percentage-and-highlighted-words-process-in-comparison-page/"}
 ---
 
+#comparison 
 
-Display of matched percentage is executed by a PHP function newComareSymptom() which is defined in the “functions.php” page.
+Display of matched percentage is executed by a PHP function `newComareSymptom()` which is defined in the `“functions.php”` page.
 
   
 
