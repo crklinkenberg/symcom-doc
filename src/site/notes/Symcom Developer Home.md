@@ -59,7 +59,6 @@ Symptoms can be defined by a type and the symptom type of a particular source ca
 Symptom type can also be defined for individual symptom via the edit option for the symptoms. In this case, the individual symptom type setting will be of higher priority than its source values.
 
 [[Topics/Symptom Type Setting\|Symptom Type Setting]]
-[[Notes/Symptom Type Detection\|Symptom Type Detection]]
 #### **Comparison**:
 Comparisons among symptoms of different sources are done in this section. Initial source and comparison source are selected from the existing source list. Language of the symptoms, including percentage to compare is also selected. The comparing sources are always younger than the initial sources in the comparison process.
 
@@ -71,8 +70,12 @@ Multiple comparing sources can be selected for a single initial source. When mul
 #### **Saving of Comparisons:**
 Comparisons after proper inspection of non-secure connections and markings by the editor and the supervisor can be saved. Whenever a comparison is saved, connect, connect-edit and swap connections are preserved for further comparisons and editing. All initial and comparing symptoms become a single symptom list which are displayed chronologically as per their source year. All paste and paste edit connected symptoms are sorted just below its initial parent. This new combined source becomes ready for further comparisons with other sources.
 
-_NOTE: Chronological means ascending to descending here and this sorting order is only required in the final completed comparison version. During comparison, chronological order is not shown rather the latest connection is shown first under the initials in case of combined source comparisons.
+```
+NOTE: Chronological means ascending to descending here and this sorting order is only required in the final completed comparison version. During comparison, chronological order is not shown rather the latest connection is shown first under the initials in case of combined source comparisons.
+```
 
-[[Contents\|Contents]] : Click to go through all the topics.
+
+### [[Contents\|Contents]] : 
+Click to go through all the topics.
 
 Some topics are categories into tags for efficient searching. These tags include: `import, comparison, general, chaptering, userview`
