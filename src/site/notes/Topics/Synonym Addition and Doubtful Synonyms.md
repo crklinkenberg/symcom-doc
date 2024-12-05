@@ -13,11 +13,11 @@ Laravel API is used for this process.  Views are contained inside “Master Dat
 Inputs are taken from the form and inserted in SQL table.
 ```
 Related sql tables:
-- synonym_de
-- synonym_en
-- synonym_de_synonym_reference
-- synonym_en_synonym_reference
-- synonym_reference
+- english_synonyms
+- german_synonyms
+- rel_synonym_literature_english_synonym
+- rel_synonym_literature_german_synonym
+- synonym_literatures
 ```
   
 Related Scripts:
