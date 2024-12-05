@@ -29,26 +29,24 @@ NOTE: Any string manipulated in the import process must be made compatible for t
 
   
 
-Function thetaInItalics() is used to convert theta symbol into italics in the display process.  It does not affect the values in the database.
+Function `thetaInItalics()` is used to convert theta symbol into italics in the display process.  It does not affect the values in the database.
 
-Function fetchThetaPart(), deleteThetaPart() and insertThetaPart() are used for the processing of theta parts in a symptom  based on the symptom id , quelle id and the theta string .
+Function `fetchThetaPart()` is used for extracting the theta parts from Hering symptom string, the input parameter is `BeschreibungFull_de` or `BeschreibungFull_en` which is present in the `quelle_import_test` i.e. symptoms table and it is of type `string`.
 
   
 
 Affected scripts:
-
+```
 1. index.php
-    
 2. functions.php
-    
 3. symptoms.php
-    
 4. delete-quelle-new.php
-    
+```
+
 
   
 
-NOTE:
+#### NOTE:
 
 No validation of HTML tags like `<em>, <bold>` etc and presence of special characters like `( , ), @, [, ]` in the theta symptom part for Hering sources is applied  during programming.
 
