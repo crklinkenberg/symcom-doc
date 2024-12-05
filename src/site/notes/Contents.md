@@ -15,11 +15,11 @@
 - [[Topics/Symptom Type Setting\|Symptom Type Setting]]
 - [[Topics/Conversion of Grading During Display\|Conversion of Grading During Display]]
 - [[Topics/Synonym Addition and Doubtful Synonyms\|Synonym Addition and Doubtful Synonyms]]
-- [[Topics/Materia Medica\|Materia Medica]]
 - [[Topics/Bönninghausen Sources\|Bönninghausen Sources]]
 - [[Topics/Allen Source Import\|Allen Source Import]]
 - [[Topics/Hering source Import\|Hering source Import]]
 - [[Topics/Import section additional concepts = Allen, Synonym\|Import section additional concepts = Allen, Synonym]]
+- [[Topics/Materia Medica\|Materia Medica]]
 - [[Topics/Connections among sources\|Connections among sources]]
 	a. Connect (Connection)
 	b. Connect (Disconnection)
