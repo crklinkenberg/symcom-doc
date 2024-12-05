@@ -26,3 +26,4 @@
 12. History tables for a comparison is created dynamically when a comparison is finalized and saved by the supervisor.
 13. Tables in the database should follow 3NF level of normalization.
 14. For chaptering process, a different database with name `"symptom_classification"` is used by the python program. The chapter ID defined in that database are globally accepted by the `Symcom` program. Any change in chapter name or structure in that database will be effective in throughout the program.
+15. It is advised to always escape symptom strings which may contain special characters before insertion to SQL tables.
