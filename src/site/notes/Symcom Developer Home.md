@@ -3,7 +3,7 @@
 ---
 
 # Symcom Developer Guide
-Last Update: April, 2024.
+
 #### **Getting Started:**
 Welcome to the Symcom Developer Guide! If you're looking for information on individual topics, please follow the contents or topics from the side bar navigation. Continue reading for an introduction to the documentation, Import Process, Comparison, Connections and more!
 
