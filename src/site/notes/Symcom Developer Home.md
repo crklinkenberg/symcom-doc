@@ -42,6 +42,7 @@ Imports of new symptoms to existing sources are done in this section. Import set
 Certain rules are there according to which import of symptoms is processed. The program analyses the imported symptoms and saves them according to the rules, confirmations for unrecognized patterns is also done by the program.
 
 [[Topics/Rules relating to symptom import\|Rules relating to symptom import]]
+[[Topics/Source Import\|Source Import]]
 [[Topics/Symcom Developer Guide (Work Chart)\|Symcom Developer Guide (Work Chart)]]
 
 #### **Font Settings**:
@@ -51,11 +52,14 @@ When for a particular source, the grade is assigned for the already defined grad
 
 For example: If for “Bold” option the value is assigned to number 2 in the “Gradings” section and if for a particular source the “Kursiv” option is assigned to number 2 in the “Grade Setting” page then since the number 2 is defined for “Bold’ option, the symptoms in kursiv (italics) will be converted to bold font whenever it is displayed in the Symcom application.
 
+[[Topics/Conversion of Grading During Display\|Conversion of Grading During Display]]
 #### **Symptom Type Setting:**
 Symptoms can be defined by a type and the symptom type of a particular source can be defined from the “Symptom Type Setting” menu option.
 
 Symptom type can also be defined for individual symptom via the edit option for the symptoms. In this case, the individual symptom type setting will be of higher priority than its source values.
 
+[[Topics/Symptom Type Setting\|Symptom Type Setting]]
+[[Notes/Symptom Type Detection\|Symptom Type Detection]]
 #### **Comparison**:
 Comparisons among symptoms of different sources are done in this section. Initial source and comparison source are selected from the existing source list. Language of the symptoms, including percentage to compare is also selected. The comparing sources are always younger than the initial sources in the comparison process.
 
