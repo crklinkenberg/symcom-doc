@@ -30,6 +30,7 @@
 	g. Paste Edit (Connection)
 	h. Paste Edit (Disconnection)
 
+- [[Topics/Reflexive grades with CEs and swap CEs\|Reflexive grades with CEs and swap CEs]]
 - [[Topics/Saving of comparisons\|Saving of comparisons]]
 - [[Topics/Marking of symptoms\|Marking of symptoms]]
 - [[Topics/Unmarked and non-secure connection check before saving (Technical Workflow)\|Unmarked and non-secure connection check before saving (Technical Workflow)]]
@@ -71,6 +72,7 @@
 - [[Topics/Punctuation removal from grading\|Punctuation removal from grading]]
 - [[Topics/Comparison Table Creation Process (Batch Processing)\|Comparison Table Creation Process (Batch Processing)]]
 - [[Topics/Miscellaneous Information\|Miscellaneous Information]]
+- [[Topics/Symptom Edit Submission Workflow\|Symptom Edit Submission Workflow]]
 - [[Topics/Important Functionalities & their workflows\|Important Functionalities & their workflows]]
 	1. Source type of a symptom
 	2. Symptom type of a symptom
