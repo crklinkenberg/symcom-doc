@@ -80,3 +80,4 @@
 - [[Topics/Sorting of symptoms based on superscript numbers\|Sorting of symptoms based on superscript numbers]]
 - [[Topics/Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
 - [[Topics/Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
+- [[Symcom Synonym Tool Developer Guidelines\|Symcom Synonym Tool Developer Guidelines]]
