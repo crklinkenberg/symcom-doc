@@ -23,7 +23,7 @@ Switch to remote branch `synonym-tool`.
 *Instructions for setting up using XAMPP and composer in Windows OS will be given here.*
 
 ##### Database setup:
-Database for running Symcom locally will be provided along with the set-up. This database will contain all required SQL tables including  symptoms which should be used for the new tool implementation. At any point of time, if new symptoms are required to be tested with the tool, the database will be provided again.
+Database for running Symcom locally will be provided along with the set-up. This database will contain all required SQL tables including  symptoms which should be used for the new tool implementation. At any point of time, if new symptoms are required to be tested with the tool, the database containing new imported symptoms will be provided again.
 
 *Instructions for setting up the MySQL database, including already existing symptoms, synonyms, stop words SQL tables will be given here.* 
 
