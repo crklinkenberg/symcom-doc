@@ -16,4 +16,4 @@
 | genNsUpdation                                | updation of the gen-ns field in the comparison table.                                                         |
 | unmarkedSymptoms                             | get number of unmarked symptoms from a comparison.                                                            |
 | zeroComparativesCheck                        | zero comparatives match below initial symptom check.                                                          |
-|                                              |                                                                                                               |
+| compareSymptomWithSynonyms                   | highlights the matching words between symptoms pairs.                                                         |
