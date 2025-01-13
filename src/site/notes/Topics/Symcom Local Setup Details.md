@@ -9,270 +9,122 @@
  + **PHP Ver. 7.1 - 7.2**
  + **Composer 1.6.3**
 
-     ```diff
-     - THE FOLLOWING CHANGES WILL NOT AFFECT THE EXISTING SETUP OR CONFIGURATION OF THE SYSTEM -
-     ```
 
-1. Get the Exact **```Xampp7.1.3 from the given link.```** [Xampp7.1.3](https://udomain.dl.sourceforge.net/project/xampp/XAMPP%20Windows/7.1.33/xampp-windows-x64-7.1.33-1-VC14-installer.exe).
-   - When installing Xammp Follow the Installation normally and Install **Xampp to new folder** if there's Xampp already installed.<br />
-     **Example:** ```C:/xampp2```
-   - If there's no Xampp installed previously in your system then the default path will be
-     **Example:** ```C:/xampp```
-     <br /><br />
- 2. **Next,** **Open Powershell with Administrator privilege:** and then run command: <!-- ```Set-ExecutionPolicy RemoteSigned``` -->
+#### Download XAMPP 7.1.33: 
+`https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.1.33/xampp-windows-x64-7.1.33-1-VC14-installer.exe/download`
 
 ```
+Add XAMPP installation location to Path in environment variables.
 
-Set-ExecutionPolicy RemoteSigned
+C:\xampp\php to Path in environment variables if not already done.
 ```
-**NOTE** 
-> This will enable us to run the scripts.
-3. And then navigate to the **```Xampp htdocs```** location and clone the repository or place/paste your downloaded project here.  
-   - **Example:** ```C:/xampp/htdocs```
-   <br /><br />
-   - Skip the below command ```git clone https://github.com/crklinkenberg/symcom01Production.git``` if you are using downloaded project.
-   <br /><br />
-   ```
-   git clone https://github.com/crklinkenberg/symcom01Production.git
-   ```
-   - Now our project location is this ```C:/xampp/htdocs/symcom01Production``` here **symcom01Production** is the project folder name. 
-   
-<!-- -[x] Then run, ```.\Script01.ps1```. This script will install Xampp, Git, and Download Composer. **1.6.3**. -->
-- [x] Next, use the script which will Download Composer **1.6.3** in your system.<br /><br />
-   - Open Elevated administrator ```Powershell``` and navigate to the location.<br /><br />
-   ```
-   C:/xampp/htdocs/symcom01Production/scripts
-   ```
-   - Then run the following command.<br /><br />
-   ```
-   .\Script01.ps1
-   ```
-   
-**NOTE** 
-> Running the ```Script01.ps1``` will asks for the location of the **Xampp directory** ```which is```.<br /><br />
-   ```
-   C:/xampp/
-   ```
-> Then the script will complete the ```composer install``` command and will complete the process.
-<br /><br />**Composer** wil be saved into a new folder at.<br />
-     **```C:\NeededFiles```**<br /><br />
-```diff
-- DO NOT DELETE THE FOLDER -
+
+#### Download Composer Phar 1.6.3: 
+`https://getcomposer.org/download/1.6.3/composer.phar`
+
+Navigate to `htdocs` directory inside `XAMPP installtion directory` and clone Git repo: 
+`https://github.com/crklinkenberg/symcom01.git` which is the development link for Symcom.
+
+The whole project will now contain under `symcom01` folder which is the root directory of the cloned project.
+
+Copy `composer.phar` to the cloned directory (root).
+Install dependencies using the below commands in terminal.
 ```
-<br />
-
-4. Now get your database databse file ready with you in this case "production stage database file" (i.e. xxxxxxxxxxx.sql) form AWS S3(if you have the access to it). Or have your .sql file ready with you that is provide to you.<br /><br />
-
-- Now, Let’s start  our xampp server.
-- Go to the below mentioned folder and right click on the xampp-control.exe and then click on Run as Administrator. This will open the Xampp control panel window.
-- **Example** ```C:/xampp/xampp-control.exe```
-- Now Xampp control panel window is open.
-- Now Click on start button for both Apache and MySQL and wait until they turn green and then after that folow the instructions below.
-- After starting the local Xampp Server, Go to ```http://localhost/phpmyadmin/``` in your web browser.
-- Now, Create a database in ```http://localhost/phpmyadmin/``` with any name
-- **Example** ```my_database```
-- Now, to import the database, we will used specified tools of xampp (i.e. Using terminal and mysql command)
-- To open the terminal. Find or open the Xampp control panel window first (which is mentioned above).
-- Now, find a button named **Shell** in the right hand side of the Xampp control panel window and click that button and then use the following command in the terminal:
-- ```mysql -u root -p my_database < "location of the .sql file"```
-- Here in the above command
-
-  ```
-  root : is database username
-  -p : stands for password which is blank by default
-  my_database : is the database which we created in the http://localhost/phpmyadmin/
-  "location of the .sql file" : should be the path of the .sql file that you have with you to import
-  ```
-- **Example in my case** ```mysql -u root -p my_database < "C:/Users/Mypc/Downloads/production_repertory.sql"```
-- After successfully processing the above command our downloaded databse .sql file will git imported into our ```http://localhost/phpmyadmin/``` database which we created in above step.(Which is in my case "my_database")   
-
-<!--
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ dfgdfgdfgd@@
+php composer.phar show
+php composer.phar install
 ```
--->
 
+Copy `composer.phar` to  `symcom01\symcom\api`.
+Install dependencies using the below commands in terminal.
+```
+php composer.phar show
+php composer.phar install
+```
 
+Once all dependencies are installed, it is advised to modify the `php.ini` variables.
+```
+Go to your xampp installation directory -> php -> (open) php.ini file and make these changes.
+    max_execution_time = 12000.
+    max_input_time = 6000.
+    memory_limit = 1024M.
+    upload_max_filesize = 100M.
+    post_max_size = 100M.
+```
 
+Start XAMPP server.
 
+Open XAMPP installed directory and open xampp-control.exe as Administrator. Example ```C:/xampp/xampp-control.exe```
 
+Click  start button for both Apache and MySQL and wait until they turn green and then after that follow the instructions below.
+
+Database can be accessed from `http://localhost/phpmyadmin/` in the browser.
+
+Create new database and  import the database extracted from AWS or SQL provided.
+```
+To import data via terminal:
+In XAMPP control panel, ind a button named **Shell** in the right hand side and click that button and then use the following command:
+
+mysql -u root -p my_database < "location of the .sql file"
+```
+Command Help:
+```
+root : is database username
+-p : stands for password which is blank by default
+my_database : is the database which we created in the http://localhost/phpmyadmin/
+"location of the .sql file" : should be the path of the .sql file that you have with you to import
+
+Example: mysql -u root -p my_database < "C:/Users/Mypc/Downloads/development_repertory.sql
+```
 
 # Installation
 
+Go to your project directory. Example: ```C:/xampp/htdocs/symcom01```, delete the existing `.htaccess` file and then rename `.htaccess-local` to `.htaccess`.
 
-1. Go to your project directory which is in my case ```C:/xampp/htdocs/symcom01Production```, delete the existing **.htaccess** file and then rename **.htaccess-local** to **.htaccess**.
+Change the configuration in the mentioned location: `config/route.php`
+Open this file with an editor and change the database configuration with your details: 
+```
+$dbUsername = 'root'; // The default Xampp database username is root.
+$dbPassword = ''; // The dufault Xampp database pasword is blank.
+$dbName = 'my_database_name';  
+```
 
-2. Change the configuration in the mentioned location: **```config/route.php```**
-   - Open this file with an editor and change the database configuration with your details: <br /><br />
+In this file change PHP variable `$absoluteUrl` value to your application URL. 
+Example: `http://localhost/symcom01/`. Here `symcom01` is the git cloned directory name which is also the project root. 
+```
+Change:
+$absoluteUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/";
 
-		```
-		$dbUsername = 'root'; // The default Xampp database username is root.
-		$dbPassword = ''; // The dufault Xampp database pasword is blank.
-		$dbName = 'my_database'; // In my case the databse name is my_database, which we created in the above mentioned steps. 
-		```
-   - In this file change ```$absoluteUrl``` variable value to your application URL. In current example my application URL is ```http://localhost/symcom01Production/```
-   - Chage
-		```
-   		$absoluteUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/";
-   		```
-   - To
-     
-     		
-     		$absoluteUrl = "http://localhost/symcom01Production/";
-     		
-     
-3. Now inside **C:/xampp/htdocs/symcom01Production/dev-exp** directory delete the existing **check-if-comparison-table-exist.php** page and then rename **check-if-comparison-table-exist-local.php** page to **check-if-comparison-table-exist.php**
-
-4. Follow the steps below for the location: ```C:/xampp/htdocs/symcom01Production/symcom/api```
-   - Delete the existing .env file and then rename .env.development to .env on current location.
-   - Now Open this .env file with an editor and change the database details as we have done in above mentioned steps. For me the database details are:
-
-		```
-		DB_DATABASE=my_database
-		DB_USERNAME=root
-		DB_PASSWORD=
-		```
-5. Open file ```constants.php``` in an editor, go to the location: ```C:/xampp/htdocs/symcom01Production/symcom/api/config/constants.php```
-   - Here in this file change developemt environment's ```api_base_path``` url value to your application url value. Which is in my case ```http://localhost/symcom01Production/symcom/api/public/```
+To:
+$absoluteUrl = "http://localhost/symcom01/";
+```
    
-		Change
-		```
-   		if (app()->environment('development')) {
-			$configArray2 ['api_base_path'] = 'http://dev.reference-repertory.com/symcom/api/public/';  
-		}
-		```
-   		To
-   		```
-     		if (app()->environment('development')) {
-			$configArray2 ['api_base_path'] = 'http://localhost/symcom01Production/symcom/api/public/';  
-		}
-   		```
-6. After completing the above steps, the application setup is done. You can now open the application in a we browser using the application URL
-      ```
-      http://localhost/symcom01Production/
-      ```
-        
-<!--   - Now in on your cmd or terminal at this location and run below command
-		```
-		php artisan key:generate
-		```
-	
-5. To fulfill some of our custom requirements we need to do the following changes:
-	
-   - Location: ```project-folder-name/symcom/api/vendor/laravel/passport/src/Bridge/UserRepository.php``` Here in this script(UserRepository.php) we have to add the below mentioned function at the end inside the class. Just copy the below function and paste /add it in UserRepository.php
-		```
-	
-		/**
-		 * Custom added
-		 */
-		public function getEntityByUserCredentials($username, $password, $grantType, ClientEntityInterface $clientEntity, $provider)
-		{
-			$provider = config('auth.guards.'.$provider.'.provider');
 
-			if (is_null($model = config('auth.providers.'.$provider.'.model'))) {
-				throw new RuntimeException('Unable to determine authentication model from configuration.');
-			}
+Inside `C:/xampp/htdocs/symcom01/dev-exp/` directory delete the existing `check-if-comparison-table-exist.php` page and then rename `check-if-comparison-table-exist-local.php` page to `check-if-comparison-table-exist.php`.
 
-			if (method_exists($model, 'findForPassport')) {
-				$user = (new $model)->findForPassport($username);
-			} else {
-				$user = (new $model)->where('email', $username)->first();
-			}
-
-			if (! $user) {
-				return;
-			} elseif (method_exists($user, 'validateForPassportPasswordGrant')) {
-				if (! $user->validateForPassportPasswordGrant($password)) {
-					return;
-				}
-			} elseif (! $this->hasher->check($password, $user->getAuthPassword())) {
-				return;
-			}
-
-			return new User($user->getAuthIdentifier());
-		}
-		```
-	
-	
-		
-   - Location: ```project-folder-name/symcom/api/vendor/league/oauth2-server/src/Grant/PasswordGrant.php```
-		In this script do the following things:
-       - Comment out the existing validateUser() function. like shown below:
-		```
-		// protected function validateUser(ServerRequestInterface $request, ClientEntityInterface $client)
-		// {
-		//     $username = $this->getRequestParameter('username', $request);
-		//     if (is_null($username)) {
-		//         throw OAuthServerException::invalidRequest('username');
-		//     }
-
-		//     $password = $this->getRequestParameter('password', $request);
-		//     if (is_null($password)) {
-		//         throw OAuthServerException::invalidRequest('password');
-		//     }
-
-		//     $user = $this->userRepository->getUserEntityByUserCredentials(
-		//         $username,
-		//         $password,
-		//         $this->getIdentifier(),
-		//         $client
-		//     );
-		//     if ($user instanceof UserEntityInterface === false) {
-		//         $this->getEmitter()->emit(new RequestEvent(RequestEvent::USER_AUTHENTICATION_FAILED, $request));
-
-		//         throw OAuthServerException::invalidCredentials();
-		//     }
-
-		//     return $user;
-		// }
-		```
+Follow the steps below for the location: ```C:/xampp/htdocs/symcom01/symcom/api```
+   - Delete the existing `.env` file and then rename `.env.development` to `.env` on current location.
+   - Open this `.env` file with an editor and change the database details just like above:
+```
+DB_DATABASE=my_database_name
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 
-       - Now add the new validateUser() function code which is given below. Just copy the below function and add it in PasswordGrant.php inside the class:
-		```
-		/**
-		* Customised validateUser()
-		* Default one is commented above
-		**/
-		protected function validateUser(ServerRequestInterface $request, ClientEntityInterface $client)
-		{
-			$username = $this->getRequestParameter('username', $request);
-			if (is_null($username)) {
-				throw OAuthServerException::invalidRequest('username');
-			}
+Open file ```constants.php``` in an editor, go to the location: ```C:/xampp/htdocs/symcom01/symcom/api/config/constants.php```
 
-			$password = $this->getRequestParameter('password', $request);
-			if (is_null($password)) {
-				throw OAuthServerException::invalidRequest('password');
-			}
+```
+Change:
+if (app()->environment('development')) {
+	$configArray2 ['api_base_path'] = 'http://dev.reference-repertory.com/symcom/api/public/';  
+}
 
-			$provider = $this->getRequestParameter('provider', $request);
-			if (is_null($provider)) {
-				throw OAuthServerException::invalidRequest('provider');
-			}
+To:
+if (app()->environment('development')) {
+	$configArray2 ['api_base_path'] = 'http://localhost/symcom01/symcom/api/public/';  
+}
+```
+   
+After successful changes, the application can be opened in browser with URL: `http://localhost/symcom01/`.
 
-			$user = $this->userRepository->getEntityByUserCredentials(
-				$username,
-				$password,
-				$this->getIdentifier(),
-				$client,
-				$provider
-			);
-			if ($user instanceof UserEntityInterface === false) {
-				$this->getEmitter()->emit(new RequestEvent(RequestEvent::USER_AUTHENTICATION_FAILED, $request));
 
-				throw OAuthServerException::invalidCredentials();
-			}
-
-			return $user;
-		}
-		```
-		
-		
-		
--->
