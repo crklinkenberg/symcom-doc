@@ -34,3 +34,11 @@ Related scripts:
 3. comparison-table-page-modules.php
 4. get-symptom-search-result-modified.php
 ```
+
+
+### Multiple word searching
+The search function has been updated with multiple word search. For this the default `datatable` classes `dataTables_filter` are modified with new HTML id `search-comparing-input-field` and `search-initial-input-field` to control the search input field of the `datatables`.
+
+`keyup` events are added to both the above mentioned ID's and highlighting of the new search results have been added to both of these events. 
+
+NOTE: Search icon is added to the comparative symptom in all the comparison.
