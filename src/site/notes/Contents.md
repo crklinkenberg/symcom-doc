@@ -83,4 +83,4 @@
 - [[Symcom Synonym Tool Developer Guidelines\|Symcom Synonym Tool Developer Guidelines]]
 
 ##### Discussions:
-[[Conversion function and edits with symptoms in Symcom\|Conversion function and edits with symptoms in Symcom]]
+[[Discussions/Conversion function and edits with symptoms in Symcom\|Conversion function and edits with symptoms in Symcom]]
