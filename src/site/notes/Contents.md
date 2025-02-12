@@ -81,6 +81,3 @@
 - [[Topics/Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
 - [[Topics/Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
 - [[Symcom Synonym Tool Developer Guidelines\|Symcom Synonym Tool Developer Guidelines]]
-
-##### Discussions:
-[[Discussions/Conversion function and edits with symptoms in Symcom\|Conversion function and edits with symptoms in Symcom]]
