@@ -81,3 +81,4 @@
 - [[Topics/Rules applicable to new refactored database tables.\|Rules applicable to new refactored database tables.]]
 - [[Topics/Automatic Symptom Connection Process\|Automatic Symptom Connection Process]]
 - [[Symcom Synonym Tool Developer Guidelines\|Symcom Synonym Tool Developer Guidelines]]
+- [[Remaining Task List Deductions\|Remaining Task List Deductions]]
