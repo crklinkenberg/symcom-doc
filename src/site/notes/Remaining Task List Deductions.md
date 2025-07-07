@@ -131,3 +131,29 @@ The connection in the working comparison needs to be chronologically sorted as p
 
 NOTE: It will not be simple to maintain each element. Deep JS coding is required. Will take some time. [2 weeks]
 ```
+
+
+```
+14. Speed on all connections. Slowness in the website.
+```
+
+```
+1. If the window.bind is removed, which allows immediate display of the automatic connection initiation pop up. => Slowness is removed on page load of fresh comparison. => This can be done but connection loading still takes time.
+
+2. Loading of comment, translation, footnote has minimum effect on slowness during page load.
+
+3. Loading of connections => For 50 initial symptoms, if connections are to be loaded in all connections. It takes time in page reloading.
+
+Numbers: 
+For 50 initials, 30 sec without cache.
+For 50 initials, 22 sec with cache.
+
+4. Loading after connection like CE, PE takes most time.
+Numbers: 
+For 50 initials, 36-45 sec.
+
+This happens as page is relaoded after these connections. 
+Could be reduced if page is not reloaded but affected sections are adjusted using JS and JQuery.
+
+NOTE: I think we can overlook point 3 for now. As loading of connections on page reload will disappear after point 4 is operated. Point 3 will only occur when page is navigated.
+```
