@@ -156,4 +156,12 @@ This happens as page is relaoded after these connections.
 Could be reduced if page is not reloaded but affected sections are adjusted using JS and JQuery.
 
 NOTE: I think we can overlook point 3 for now. As loading of connections on page reload will disappear after point 4 is operated. Point 3 will only occur when page is navigated.
+
+P.S: We could make all the connections to display very fast but it the program has function has show all connections checkbox which needs all connections to be loaded first before the opearations.
+```
+
+
+```
+Additional Note:
+It is noteworthy that some tasks are dependant on other tasks and even though implementation on the newer version has been reduced to smaller tasks, yet the association of one task with others will incur some time in the initial days of implementation. The work would however be completed in the overall time period estimated, but parallel work on multiple tasks is obvious. For example, tasks like implementation of connections is also related to displaying the connection and loading the connections for different situations like page reload, previous connection arrangements etc. The loading of connections is associated with slow loading issue task, choronological ordering task etc.  
 ```
