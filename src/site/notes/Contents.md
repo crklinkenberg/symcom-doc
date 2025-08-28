@@ -91,3 +91,9 @@
 - [[Topics/Edits in symptoms page\|Edits in symptoms page]]
 - [[Topics/Tiny-MCE editor for grade settings\|Tiny-MCE editor for grade settings]]
 - [[Discussions/Conversion function and edits with symptoms in Symcom\|Conversion function and edits with symptoms in Symcom]]
+
+
+### Documentation for Symcom Version 2.0:
+- [[symcom-v2-documentation/Symcom Documentation V2.0\|Symcom Documentation V2.0]]
+- [[symcom-v2-documentation/Project Structure\|Project Structure]]
+- [[symcom-v2-documentation/Local Setup Guidelines\|Local Setup Guidelines]]
