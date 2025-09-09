@@ -15,7 +15,7 @@ This is how it is saved in the database by the program:
 <bar-two-normal>For twelve days pain below right scapula; &lt; in evening, after exertion, by deep inspiration and by moving right arm; &gt; by pressure and lying down, especially on right side; the pain extends over a spot as large as the palm; when severe it extends to corresponding part of left side.</bar-two-normal>
 ```
 
-The < is saved as &lt; and > as &gt;
+The < is saved as `&lt;` and > as` &gt;`
 The semicolon appearing for these symbols, produces inappropriate results when processed by the program:
 ```html
 <bar-two-normal class="text-grade-2">For twelve days pain below right scapula</bar-two-normal>;<bar-two-normal class="text-grade-2"> &lt;</bar-two-normal>;<bar-two-normal class="text-grade-2"> in evening</bar-two-normal>,<bar-two-normal class="text-grade-2"> after exertion</bar-two-normal>,<bar-two-normal class="text-grade-2"> by deep inspiration and by moving right arm</bar-two-normal>;<bar-two-normal class="text-grade-2"> &gt;</bar-two-normal>;<bar-two-normal class="text-grade-2"> by pressure and lying down</bar-two-normal>,<bar-two-normal class="text-grade-2"> especially on right side</bar-two-normal>;<bar-two-normal class="text-grade-2"> the pain extends over a spot as large as the palm</bar-two-normal>;<bar-two-normal class="text-grade-2"> when severe it extends to corresponding part of left side</bar-two-normal>.
