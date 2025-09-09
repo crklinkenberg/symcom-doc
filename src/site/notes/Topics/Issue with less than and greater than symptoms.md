@@ -27,6 +27,6 @@ For twelve days pain below right scapula; <; in evening, after exertion, by deep
 ```
 
 Note:
-If the processed program is to be manipulated, the replacement of semicolon ; of &lt; or &gt; directly may change the symptom string as semicolon appears also as part of the symptom.
+If the processed program is to be manipulated, the replacement of semicolon ; of` &lt;` or `&gt;` directly may change the symptom string as semicolon appears also as part of the symptom.
 
 If processing is made with usage of < or > symbols, it affects the xml tags and overall symptom structure is disturbed.
