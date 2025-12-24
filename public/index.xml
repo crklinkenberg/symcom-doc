@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 4</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Quartz 4</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Home</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[ Symcom Documentation This repo contains documentation of Symcom Application buillt by Alegra Labs Gmbh. Built with Quartz and Obsidian. Contents. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:18:10 GMT</pubDate>
+  </item><item>
+    <title>User View Show Source Setting</title>
+    <link>https://quartz.jzhao.xyz/Topics/User-View-Show-Source-Setting</link>
+    <guid>https://quartz.jzhao.xyz/Topics/User-View-Show-Source-Setting</guid>
+    <description><![CDATA[ userview Technical Details: Source Setting is controlled by getQuelleAbbreviation() PHP function. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:16:11 GMT</pubDate>
+  </item><item>
+    <title>Conversion function and edits with symptoms in Symcom</title>
+    <link>https://quartz.jzhao.xyz/Discussions/Conversion-function-and-edits-with-symptoms-in-Symcom</link>
+    <guid>https://quartz.jzhao.xyz/Discussions/Conversion-function-and-edits-with-symptoms-in-Symcom</guid>
+    <description><![CDATA[ *Severe headache,° with deep red eyes and dry lips. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:14:58 GMT</pubDate>
+  </item><item>
+    <title>Chapter Structure Guide</title>
+    <link>https://quartz.jzhao.xyz/Topics/Chapter-Structure-Guide</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Chapter-Structure-Guide</guid>
+    <description><![CDATA[ chaptering Initiation of automatic chapter classification process: Chapters can be classified to the final completed version of the comparison by clicking on the button shown below: This starts the automatic chapter classification program in the background. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:14:39 GMT</pubDate>
+  </item><item>
+    <title>Chapter Classification Model Re-train</title>
+    <link>https://quartz.jzhao.xyz/Topics/Chapter-Classification-Model-Re-train</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Chapter-Classification-Model-Re-train</guid>
+    <description><![CDATA[ chaptering Chapter classification model re-training can be done uploading a .txt file containing the chapter name and symptoms in particular format. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:12:37 GMT</pubDate>
+  </item><item>
+    <title>Automatic Symptom Connection Process</title>
+    <link>https://quartz.jzhao.xyz/Topics/Automatic-Symptom-Connection-Process</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Automatic-Symptom-Connection-Process</guid>
+    <description><![CDATA[ comparison This process is available in the comparison process where an editor can choose to connect the highest matched comparative with the initial symptoms choosing a minimum percentage as lower limit for the automatic connection. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:11:30 GMT</pubDate>
+  </item><item>
+    <title>Symcom Developer Guide (Work Chart)</title>
+    <link>https://quartz.jzhao.xyz/Topics/Symcom-Developer-Guide-(Work-Chart)</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Symcom-Developer-Guide-(Work-Chart)</guid>
+    <description><![CDATA[ import comparison Technical Help: The whole project is controlled with three different versions. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:08:25 GMT</pubDate>
+  </item><item>
+    <title>Symcom Local Setup Details</title>
+    <link>https://quartz.jzhao.xyz/Topics/Symcom-Local-Setup-Details</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Symcom-Local-Setup-Details</guid>
+    <description><![CDATA[ Prerequisites Windows Operating System XAMPP 7.1.33 PHP Ver. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:01:20 GMT</pubDate>
+  </item><item>
+    <title>Allen Source Import</title>
+    <link>https://quartz.jzhao.xyz/Topics/Allen-Source-Import</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Allen-Source-Import</guid>
+    <description><![CDATA[ import Allen Sources are special sources where symptoms have references linked to it. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 19:01:08 GMT</pubDate>
+  </item><item>
+    <title>Source Settings</title>
+    <link>https://quartz.jzhao.xyz/Topics/Source-Settings</link>
+    <guid>https://quartz.jzhao.xyz/Topics/Source-Settings</guid>
+    <description><![CDATA[ Gradings Technical Details: Grade Settings shows the list of already assigned grade values. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 18:31:36 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

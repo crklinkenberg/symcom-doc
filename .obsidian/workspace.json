@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "726177e82c621a24",
+    "type": "split",
+    "children": [
+      {
+        "id": "a82771663d613ba2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16d8574db32575cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "3c9ab4c89f33d272",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Topics/Allen Source Import.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Allen Source Import"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bfec32276605fd4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "590e3da990b1f9a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6b5f82ece363554",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1a8c56cc8a10e78a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ca10784d0324f0b3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 309.5
+  },
+  "right": {
+    "id": "9f06e8894d7af413",
+    "type": "split",
+    "children": [
+      {
+        "id": "958b155deeec6e89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65879c4c216c2869",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "592562fd04b546c7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "5503de3b89244588",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fee5fc6f25c9065c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "efd17576548d86e0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "16d8574db32575cd",
+  "lastOpenFiles": [
+    "public/Topics/new-modification-in-ce-swap-ce-concept",
+    "public/Topics/miscellaneous-information",
+    "public/Topics/materia-medica",
+    "public/Topics/navigating-to-initial-symptoms-from-search-window",
+    "public/Topics/matched-percentage-and-highlighted-words-process-in-comparison-page",
+    "public/Topics/individual-upgrade-of-symptoms",
+    "public/Topics/import-section-additional-concepts-allen-synonym",
+    "public/Topics/hering-source-import",
+    "public/Topics/important-functionalities-and-their-workflows",
+    "public/Topics/custom-text-box-for-page-navigation",
+    "public/Topics/conversion-of-grading-during-display",
+    "public/symcom-v2-documentation/Symcom-Documentation-V2.0-og-image.webp",
+    "public/symcom-v2-documentation/Resolution-of-slowness.-Symcom-Current-Version-vs-New-Version-og-image.webp",
+    "public/symcom-v2-documentation/Project-Structure-og-image.webp",
+    "public/symcom-v2-documentation/Local-Setup-Guidelines-og-image.webp",
+    "public/symcom-v2-documentation/Automatic-Symptom-Connection-Process-og-image.webp",
+    "public/index-og-image.webp",
+    "public/Topics/User-view-section-Author-exclusion-and-its-effect-on-CE-symptoms-og-image.webp",
+    "public/Topics/User-View-Show-Source-Setting-og-image.webp",
+    "public/Topics/User-View-Page-og-image.webp",
+    "public/Topics/Unmatched-symptoms-comparison-og-image.webp",
+    "content/Topics/User View Show Source Setting.md",
+    "node_modules/source-map/README.md",
+    "node_modules/style-to-js/README.md",
+    "node_modules/supports-preserve-symlinks-flag/README.md",
+    "node_modules/vfile/readme.md",
+    "content/Discussions/Conversion function and edits with symptoms in Symcom.md",
+    "content/Topics/Chapter Structure Guide.md",
+    "content/Topics/Chapter Classification Model Re-train.md",
+    "content/Topics/Automatic Symptom Connection Process.md",
+    "content/Topics/Allen Source Import.md",
+    "content/site/notes/Topics/Allen Source Import.md",
+    "node_modules/d3-selection/README.md",
+    "content/Topics/Symcom Developer Guide (Work Chart).md",
+    "content/Contents.md",
+    "content/Topics/Symcom Local Setup Details.md",
+    "node_modules/@citation-js/date/README.md",
+    "node_modules/@citation-js/name/README.md",
+    "node_modules/@citation-js/name/CHANGELOG.md",
+    "node_modules/varint/README.md",
+    "node_modules/unist-util-visit-children/readme.md",
+    "node_modules/unist-util-visit-parents/readme.md",
+    "node_modules/unist-util-visit/readme.md",
+    "node_modules/unist-util-modify-children/readme.md",
+    "node_modules/unist-util-remove-position/readme.md",
+    "node_modules/unist-util-position/readme.md"
+  ]
+}
