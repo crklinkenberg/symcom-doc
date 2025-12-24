@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/index.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "README"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/index.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/index.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/index.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of README"
             }
           }
         ]
@@ -199,6 +199,7 @@
   },
   "active": "16d8574db32575cd",
   "lastOpenFiles": [
+    "content/index.md",
     "public/Topics/new-modification-in-ce-swap-ce-concept",
     "public/Topics/miscellaneous-information",
     "public/Topics/materia-medica",
@@ -209,7 +210,6 @@
     "public/Topics/hering-source-import",
     "public/Topics/important-functionalities-and-their-workflows",
     "public/Topics/custom-text-box-for-page-navigation",
-    "public/Topics/conversion-of-grading-during-display",
     "public/symcom-v2-documentation/Symcom-Documentation-V2.0-og-image.webp",
     "public/symcom-v2-documentation/Resolution-of-slowness.-Symcom-Current-Version-vs-New-Version-og-image.webp",
     "public/symcom-v2-documentation/Project-Structure-og-image.webp",
