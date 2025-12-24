@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   site: {
     title: "Symcom Documentation",
-    baseUrl: "https://crklinkenberg.github.io/symcom-doc"
+    baseUrl: "https://crklinkenberg.github.io/symcom-doc/"
   },
   configuration: {
     pageTitle: "Quartz 4",
