@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "content/symcom-v2-documentation/Explanation Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Explanation Notes"
             }
           },
           {
@@ -199,6 +199,9 @@
   },
   "active": "16d8574db32575cd",
   "lastOpenFiles": [
+    "content/Topics/Allen Source Import.md",
+    "content/symcom-v2-documentation/Explanation Notes.md",
+    "README.md",
     "public/symcom-v2-documentation/Symcom-Documentation-V2.0-og-image.webp",
     "public/symcom-v2-documentation/Resolution-of-slowness.-Symcom-Current-Version-vs-New-Version-og-image.webp",
     "public/symcom-v2-documentation/Project-Structure-og-image.webp",
@@ -209,7 +212,6 @@
     "public/Topics/User-View-Show-Source-Setting-og-image.webp",
     "public/Topics/User-View-Page-og-image.webp",
     "public/Topics/Unmatched-symptoms-comparison-og-image.webp",
-    "public/Topics/Unmarked-and-non-secure-connection-check-before-saving-(Technical-Workflow)-og-image.webp",
     "public/symcom-v2-documentation/symcom-documentation-v2-0",
     "public/symcom-v2-documentation/resolution-of-slowness-symcom-current-version-vs-new-version",
     "public/symcom-v2-documentation/project-structure",
@@ -242,8 +244,6 @@
     "node_modules/d3-time/README.md",
     "node_modules/@ungap/structured-clone/README.md",
     "node_modules/speech-rule-engine/node_modules/commander/Readme.md",
-    "node_modules/katex/contrib/mhchem/README.md",
-    "node_modules/katex/contrib/copy-tex/README.md",
-    "node_modules/katex/contrib/mathtex-script-type/README.md"
+    "node_modules/katex/contrib/mhchem/README.md"
   ]
 }
