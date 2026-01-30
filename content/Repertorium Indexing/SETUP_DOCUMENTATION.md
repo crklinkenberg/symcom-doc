@@ -23,7 +23,47 @@ dg-publish: true
 | Dependencies    | Composer          |
 
 ---
+## Source Code & Database File Locations
+This section describes where the application source code and database backups are stored on the server for both the old and current versions of the program.
 
+#### 1. Old Version of the Program
+**Developer:** Andre
+
+*  Base Directory:   `/var/www/html`
+
+*  **Source Code Archive:**  `repertorium_old.zip`
+
+* Database Backup File:  `repertorium-mysql.sq.bz2`
+
+This archive contains the earlier version of the application along with its corresponding database dump.
+
+#### **2. Modified Version (Current Version)**
+
+**Modified By:** Nibir
+
+- **Base Directory:** `/var/www/html`
+
+- Source Code Archive: `repertorium.tar.gz`
+
+This archive contains the modified version of the application.
+
+* Live Hosted URL: 
+`https://repertorium.reference-repertory.com/`
+
+#### **3. Deployed (Live) Application Code**
+
+This is the directory from which the live application is currently running.
+
+`/var/www/html/repertorium`
+
+All active source code files used by the live system are located here.
+
+#### **4. Database Used by the Live System**
+
+- **Database Backup Directory:** `/var/www/html/repertorium/required-db`
+* Database Archive File: 'repertorium.zip'
+
+This archive contains the database used by the currently hosted version of the application.
 ## Local Setup Guide (XAMPP)
 
 ### Prerequisites
