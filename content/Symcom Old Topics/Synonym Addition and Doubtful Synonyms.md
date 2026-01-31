@@ -30,4 +30,4 @@ Related Scripts:
 6. master-data\synonym-de\edit.php
 ```
 
-Additional Details: [[Topics/Symcom Master Data Guide, API included\|Symcom Master Data Guide, API included]]
+Additional Details: [[Symcom Master Data Guide, API included\|Symcom Master Data Guide, API included]]

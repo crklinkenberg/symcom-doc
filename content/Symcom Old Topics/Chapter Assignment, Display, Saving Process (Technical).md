@@ -14,7 +14,7 @@ The assigned chapter ids are saved in the database in the completed SQL table of
 Also, chapters are saved in the `symptom_chapter_assignment` SQL table which plays an important role during ordering of symptoms within a particular chapter. 
 
 More on the python chapter classification program. Check here:
-[[Topics/Chapter Classification Python Program\|Chapter Classification Python Program]]
+[[Chapter Classification Python Program\|Chapter Classification Python Program]]
 
 Related-scripts:
 ```

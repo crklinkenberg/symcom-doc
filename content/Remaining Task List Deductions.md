@@ -1,5 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/remaining-task-list-deductions/"}
+dg-publish: false
+permalink: /remaining-task-list-deductions/
 ---
 
 

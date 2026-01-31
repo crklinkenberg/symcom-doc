@@ -95,7 +95,7 @@ After successful insertion, data from temporary tables are deleted.
     
     Final processing: In this step, final insertion of the symptom in `symptoms` SQL table takes place and all categories of the symptom text like tester, medicine, literature, date, etc. are stored in different fields of the table.
 
-More details on the import process: [[Topics/Source Import\|Source Import]]
+More details on the import process: [[Source Import\|Source Import]]
 ### Admin panel: 
 Handling of all Symcom data can be done in this admin panel. This main dashboard consist of:
 1. Comparison: which is a link to the source comparison page.
@@ -138,7 +138,7 @@ same as previous but in sources table, the field source_category = 2.
     Related SQL tables: publishers.
 - Literatures: details of literature.
     Related SQL tables: literatures.
-- Grade Settings: This is the global grading setting menu. Here different text formats like Normal, `Sperrschrift (double spaced), Kursiv Sperrschrift` etc. are given unique values like 1,2,3,etc. More technical details on grade settings: [[Topics/Source Settings\|Source Settings]]
+- Grade Settings: This is the global grading setting menu. Here different text formats like Normal, `Sperrschrift (double spaced), Kursiv Sperrschrift` etc. are given unique values like 1,2,3,etc. More technical details on grade settings: [[Source Settings\|Source Settings]]
 
 ```
 Related SQL tables:
@@ -164,7 +164,7 @@ source_grading_settings: Settings for all custom HTML tags for particluar source
 
 symptom_grading_settings: Settings for all custom HTML tags for particluar symptoms is stored here.
 ```
-Details on the grading conversion function: [[Topics/Conversion of Grading During Display\|Conversion of Grading During Display]]
+Details on the grading conversion function: [[Conversion of Grading During Display\|Conversion of Grading During Display]]
 
 ---
 

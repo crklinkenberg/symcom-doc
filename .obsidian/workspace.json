@@ -22,20 +22,91 @@
             }
           },
           {
+            "id": "c7cec895fb8594d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Tasks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tasks"
+            }
+          },
+          {
+            "id": "aafd7e86a05c5509",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Tasks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tasks"
+            }
+          },
+          {
+            "id": "9517a702598cb6fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Symcom New Topics/Symcom Documentation V2.0.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Symcom Documentation V2.0"
+            }
+          },
+          {
+            "id": "42c7e4cfdd292a03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Quick Access Links.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Quick Access Links"
+            }
+          },
+          {
             "id": "3c9ab4c89f33d272",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Topics/Allen Source Import.md",
+                "file": "Work Log January 2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Allen Source Import"
+              "title": "Work Log January 2026"
+            }
+          },
+          {
+            "id": "1abef605068a35d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GPT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GPT"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -197,11 +268,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "16d8574db32575cd",
+  "active": "42c7e4cfdd292a03",
   "lastOpenFiles": [
-    "content/Topics/Allen Source Import.md",
-    "content/symcom-v2-documentation/Explanation Notes.md",
+    "content/Symcom New Topics/Symcom Documentation V2.0.md",
+    "Quick Access Links.md",
+    "content/Symcom New Topics/Resolution of slowness. Symcom Current Version vs New Version.md",
+    "content/Symcom New Topics/Project Structure.md",
+    "Symcom Synonym Tool Developer Guidelines.md",
+    "content/Symcom Developer Home.md",
+    "content/Remaining Task List Deductions.md",
+    "content/Contents.md",
+    "content/Symcom New Topics/Local Setup Guidelines.md",
+    "content/Symcom Old Topics/Symcom Local Setup Details.md",
+    "content/Symcom Old Topics/Loading more comparatives in batches.md",
+    "content/Symcom Old Topics/Tiny-MCE editor for grade settings.md",
+    "Discussions/Conversion function and edits with symptoms in Symcom.md",
+    "Discussions",
     "README.md",
+    "symcom-v2-documentation/Testings.md",
+    "content/Tasks.md",
+    "content/Repertorium Indexing/TECHNICAL_HANDOVER.md",
+    "content/Repertorium Indexing/SETUP_DOCUMENTATION.md",
+    "content/Repertorium Indexing",
+    "content/Discussions/Conversion function and edits with symptoms in Symcom.md",
+    "content/Symcom New Topics/Explanation Notes.md",
+    "content/Symcom New Topics/Bonnighausen Source Import New Symcom.md",
+    "content/Symcom New Topics/Automatic Symptom Connection Process.md",
+    "symcom-v2-documentation",
+    "Work Log January 2026.md",
+    "content/Symcom Old Topics/Allen Source Import.md",
+    "content/Symcom Old Topics/Bönninghausen Sources.md",
+    "GPT.md",
     "public/symcom-v2-documentation/Symcom-Documentation-V2.0-og-image.webp",
     "public/symcom-v2-documentation/Resolution-of-slowness.-Symcom-Current-Version-vs-New-Version-og-image.webp",
     "public/symcom-v2-documentation/Project-Structure-og-image.webp",
@@ -218,32 +315,6 @@
     "public/symcom-v2-documentation/local-setup-guidelines",
     "public/Topics/New-Modification-in-normal-symptom-edit,-CE,-SWAP-CE.html",
     "public/Topics/New-Modification-in-CE,-SWAP-CE-Concept.html",
-    "public/Topics/Kürzel-combination-(Source-Code-Control).html",
-    "public/Topics/Conversion-of-Grading-During-Display.html",
-    "public/Topics/Connections-among-sources.html",
-    "public/Topics/Comparison-status-in-different-modes.html",
-    "node_modules/mathjax-full/README.md",
-    "node_modules/mathjax-full/CONTRIBUTING.md",
-    "node_modules/pixi.js/README.md",
-    "node_modules/flexsearch/README.md",
-    "node_modules/@img/sharp-win32-x64/README.md",
-    "node_modules/@esbuild/win32-x64/README.md",
-    "node_modules/sass-embedded/README.md",
-    "node_modules/sass-embedded-win32-x64/README.md",
-    "node_modules/d3-selection/README.md",
-    "node_modules/d3-scale-chromatic/README.md",
-    "node_modules/minimatch/README.md",
-    "node_modules/d3-time-format/README.md",
-    "node_modules/d3-hierarchy/README.md",
-    "node_modules/fast-glob/README.md",
-    "node_modules/iconv-lite/README.md",
-    "node_modules/d3-scale/README.md",
-    "node_modules/robust-predicates/README.md",
-    "node_modules/d3-force/README.md",
-    "node_modules/d3-ease/README.md",
-    "node_modules/d3-time/README.md",
-    "node_modules/@ungap/structured-clone/README.md",
-    "node_modules/speech-rule-engine/node_modules/commander/Readme.md",
-    "node_modules/katex/contrib/mhchem/README.md"
+    "public/Topics/Kürzel-combination-(Source-Code-Control).html"
   ]
 }

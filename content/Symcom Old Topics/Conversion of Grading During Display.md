@@ -8,7 +8,7 @@ Symptoms displayed on Symcom program are displayed in different text formats/ gr
 
 Basic Workflow is mentioned here:
 1. The `convertTheSymptom()` PHP function is responsible for affecting the grades of the symptoms during display.
-2. Punctuations are fixed from the symptom string. More on this: [[Topics/Punctuation removal from grading\|Punctuation removal from grading]]
+2. Punctuations are fixed from the symptom string. More on this: [[Punctuation removal from grading\|Punctuation removal from grading]]
 3. All custom HTML tags (which are present in the symptom strings saved in the database) and their converted form are kept in `conversionArr`. 
 4. Bracketed part of the string which is imported as "part of symptom" is affected by grading, hence it is processed.
 5. The global grade values assigned are taken out from SQL tables `global_grading_set_values` and `global_grading_sets` and kept in `globalGradingSignArr` with the grade format as its key and is kept in `globalGradingArr`. 

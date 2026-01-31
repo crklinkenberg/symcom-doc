@@ -78,6 +78,10 @@ DB_USERNAME=user
 DB_PASSWORD=password
 ```
 
+Note: `docker-compose.yml` has been changed to adapt to variables defined in the `.env` file in latest changes/
+
+Important: Use codes from `docker-compose-live.yml` for production use.
+
 Step 6: 
 From the project files, go to `symcom-core-app/config/route-sample.php` and rename it to `route.php` and do the below changes:
 
@@ -93,7 +97,7 @@ Then, navigate to `symcom-core-app/dev-exp/db-connection-pool-sample.php` and re
 Step 7: 
 In the project root terminal instance, navigate to `db-setup` directory. Execute the below command:
 ```
-cat new_symcom.sql | docker exec -i db mysql -u root -proot symcom_db
+cat symcom_production_v2_minimal.sql | docker exec -i db mysql -u root -proot symcom_db
 ```
 
 This will dumb the SQL data to the `symcom_db` database.

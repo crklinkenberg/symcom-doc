@@ -15,7 +15,7 @@ rel_itemp_import_source_setting_tester
 
 ##### Import String Manipulation Function:
 5. The lines pasted in the text editor are kept in `symptomsArray` and each line is passed through `importedStringManipulationProcess()` PHP function for deep string scanning and processing.
-6. Check for pre defined reference is done. Checks `literature start` or `literatur start` in the line. It is controlled by flag `isPreDefinedReferenceSection`. More details on Allen Source Import Concept can be found here: [[Topics/Allen Source Import\|Allen Source Import]]
+6. Check for pre defined reference is done. Checks `literature start` or `literatur start` in the line. It is controlled by flag `isPreDefinedReferenceSection`. More details on Allen Source Import Concept can be found here: [[Allen Source Import\|Allen Source Import]]
 7.  Check for the first character of the line is done. Checks `@,(,[,` or if it is number.
 8.  If no symptom description is found then the iteration among the line continues and next line is checked.
 9. If symptom description is found, it is kept in `Beschreibung`. If a number is found with Symptom text then the line is further cleaned and the number is kept in `Symptomnummer` key of `variablesArray`.

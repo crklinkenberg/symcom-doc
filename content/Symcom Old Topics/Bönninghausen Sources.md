@@ -56,7 +56,7 @@ In the import process of these contents, the input headings sent for process are
 #### Heading import:
 The rubrics heading needed to be imported first. The UI for headings import is handled by `import-bonninghausen-rubick-headings.php` script. The contents pasted in the text box when submitted is first validated by JS function. 
 
-Each input line is processed one by one just like the [[Topics/Source Import\|Source Import]] process but is handled by `importedStringManipulationProcessForBonninghausen()` PHP function for string manipulations. 
+Each input line is processed one by one just like the [[Source Import\|Source Import]] process but is handled by `importedStringManipulationProcessForBonninghausen()` PHP function for string manipulations. 
 
 The imported symptoms are saved in the `bonninghausen_symptoms` SQL table. The table structure is same like the `symptoms` SQL table. Any grades associated in this process is saved in `bonninghausen_symptom_grading_settings` SQL table.
 
@@ -67,7 +67,7 @@ The deletion of imported headings is handled by `new_customised_datatable_list_v
 #### Bonnighausen Symptom import:
 The `import-bonninghausen.php` script is the main UI for importing and transferring Bonnighausen symptoms. The headings to be imported are pasted in the text box and after submission is validated by JS function and then is processed by the same script.
 
-Each input line is processed one by one just like the [[Topics/Source Import\|Source Import]] process but is handled by `importedStringManipulationOfBonninghausenHeading()` PHP function for string manipulations. 
+Each input line is processed one by one just like the [[Source Import\|Source Import]] process but is handled by `importedStringManipulationOfBonninghausenHeading()` PHP function for string manipulations. 
 
 The imported symptoms  after match with headings from are saved in the `	bonninghausen_approved_symptoms` SQL table. The table structure is same like the `symptoms` SQL table. Any grades associated in this process is saved in `bonninghausen_approved_symptom_grading_settings` SQL table.
 

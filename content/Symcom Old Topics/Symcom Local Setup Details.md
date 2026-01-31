@@ -1,7 +1,7 @@
 ---
 {"dg-publish":true,"permalink":"/topics/symcom-local-setup-details/"}
 ---
-
+### Setup For Symcom Old Version
 # Prerequisites
 
  + **Windows Operating System**

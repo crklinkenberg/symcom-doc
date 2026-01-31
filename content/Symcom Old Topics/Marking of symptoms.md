@@ -38,4 +38,4 @@ Back-end:
     
 - This scripts updates the “marked” field in the comparison table.
 
-More Details: [[Topics/Marking of Symptoms (Technical Details)\|Marking of Symptoms (Technical Details)]]
+More Details: [[Marking of Symptoms (Technical Details)\|Marking of Symptoms (Technical Details)]]

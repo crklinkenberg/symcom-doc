@@ -18,5 +18,5 @@ The whole application is built with core PHP, but the API for master-data includ
 
 The `master-data-openapi` directory contains `yml` files which includes documentation for the API.
 
-The database setup, SQL files are present inside `db-setup` directory. The installation details of these SQL tables to the docker MySQL database is available in [[symcom-v2-documentation/Local Setup Guidelines\|Local Setup Guidelines]].
+The database setup, SQL files are present inside `db-setup` directory. The installation details of these SQL tables to the docker MySQL database is available in [[Local Setup Guidelines\|Local Setup Guidelines]].
 
