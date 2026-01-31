@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important Credentials.md",
+                "file": "content/Updating the Documentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Important Credentials"
+              "title": "Updating the Documentation"
             }
           },
           {
@@ -286,12 +286,12 @@
   "lastOpenFiles": [
     "content/Contents.md",
     "content/Updating the Documentation.md",
+    "content/Symcom Developer Home.md",
+    "Important Credentials.md",
     "content/Quick Access Links and Info.md",
     "Work Log January 2026.md",
     "content/Symcom New Topics/Local Setup Guidelines.md",
-    "Important Credentials.md",
     "Tasks.md",
-    "content/Symcom Developer Home.md",
     "content/Symcom New Topics/Frequent issues with PHP and fixes.md",
     "content/Symcom New Topics/Resolution of slowness. Symcom Current Version vs New Version.md",
     "Discussions/Conversion function and edits with symptoms in Symcom.md",

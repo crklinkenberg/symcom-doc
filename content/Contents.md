@@ -108,5 +108,5 @@
 - [[Tiny MCE text editor for connect edit]]
 - [[Testings]]
 
-[[Quick Access Links and Info]]
+[[Quick Access Links and Info]]<br>
 [[Updating the Documentation]]

@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 The documentation is written in ".md" files and is being maintained in git repertory https://github.com/crklinkenberg/symcom-doc.
 
 Anyone who collaborates to this git repo can have access to edit or add new documentation files.
