@@ -34,3 +34,4 @@ Database details:
 2. Database name for Symcom Old Stage: `staging_repertory`
 3. Database name for Symcom Old Production: `production_repertory`
 4. Database name for Symcom Latest: `symcom_production_v2`
+5. Database name for Repertorium Indexing Program: `repertorium`
