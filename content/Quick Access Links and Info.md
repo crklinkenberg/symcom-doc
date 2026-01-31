@@ -4,8 +4,8 @@ In this page quick access links will be provided for properly navigating through
 2. Symcom Old Version Setup:[[Symcom Local Setup Details]]
 3. Repertorium Indexing Program: [[SETUP_DOCUMENTATION]]
 4. Github Repo Link For Documentation: https://github.com/crklinkenberg/symcom-doc
-5. PhpMyAdmin Access For Symcom Latest:
-6. PhpMyAdmin Access For Old Symcom, Repertorium Indexing Program: https://reference-repertory.com/phpmyadmin/
+5. PhpMyAdmin Access For Symcom Latest: https://reference-repertory.com/phpmyadmin/
+6. PhpMyAdmin Access For Old Symcom, Repertorium Indexing Program, Other Databases: https://v2.reference-repertory.com/phpmyadmin/
 7. Old Symcom Website: https://v2.reference-repertory.com/
 8. New Symcom Website: https://reference-repertory.com/login
 9. Old Symcom Development Website: https://www.dev.reference-repertory.com/
