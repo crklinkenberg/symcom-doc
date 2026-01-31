@@ -90,10 +90,22 @@
 - [[Loading more comparatives in batches\|Loading more comparatives in batches]]
 - [[Edits in symptoms page\|Edits in symptoms page]]
 - [[Tiny-MCE editor for grade settings\|Tiny-MCE editor for grade settings]]
-- [[Discussions/Conversion function and edits with symptoms in Symcom\|Conversion function and edits with symptoms in Symcom]]
 
 
 ### Documentation for Symcom Version 2.0:
 - [[Symcom Documentation V2.0\|Symcom Documentation V2.0]]
 - [[Project Structure\|Project Structure]]
 - [[Local Setup Guidelines\|Local Setup Guidelines]]
+- [[content/Symcom New Topics/Automatic Symptom Connection Process|Automatic Symptom Connection Process]]
+- [[Bonnighausen Source Import New Symcom]]
+- [[Comparison Table Creation Process]]
+- [[Connections in comparison]]
+- [[Display of connections on page load]]
+- [[Frequent issues with PHP and fixes]]
+- [[Initial serial number addition in comparison page]]
+- [[Loading of comparatives in batches for large source]]
+- [[Resolution of slowness. Symcom Current Version vs New Version]]
+- [[Tiny MCE text editor for connect edit]]
+- [[Testings]]
+
+[[Quick Access Links and Info]]

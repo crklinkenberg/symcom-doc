@@ -36,20 +36,6 @@
             }
           },
           {
-            "id": "aafd7e86a05c5509",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Quick Access Links and Info.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Quick Access Links and Info"
-            }
-          },
-          {
             "id": "9517a702598cb6fc",
             "type": "leaf",
             "state": {
@@ -163,7 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 429.5
   },
   "right": {
     "id": "9f06e8894d7af413",
@@ -268,37 +254,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "aafd7e86a05c5509",
+  "active": "9517a702598cb6fc",
   "lastOpenFiles": [
+    "content/Symcom New Topics/Frequent issues with PHP and fixes.md",
+    "content/Symcom New Topics/Resolution of slowness. Symcom Current Version vs New Version.md",
     "content/Symcom Developer Home.md",
-    "content/index.md",
-    "content/Quick Access Links and Info.md",
-    "Tasks.md",
-    "Remaining Task List Deductions.md",
+    "Discussions/Conversion function and edits with symptoms in Symcom.md",
+    "content/Contents.md",
+    "Discussions",
     "content/Other Topics/Symcom Synonym Tool Readme.md",
     "content/Other Topics/Preservation of user view page.md",
+    "content/Quick Access Links and Info.md",
+    "GPT.md",
+    "content/index.md",
+    "Tasks.md",
+    "Remaining Task List Deductions.md",
     "README.md",
-    "Discussions/Conversion function and edits with symptoms in Symcom.md",
     "content/Symcom New Topics/Automatic Symptom Connection Process.md",
     "content/Symcom New Topics/Comparison Table Creation Process.md",
     "content/Symcom New Topics/Bonnighausen Source Import New Symcom.md",
     "content/Symcom New Topics/Connections in comparison.md",
     "content/Symcom New Topics/Display of connections on page load.md",
-    "content/Symcom New Topics/Frequent issues with PHP and fixes.md",
     "content/Symcom New Topics/Initial serial number addition in comparison page.md",
     "content/Symcom New Topics/Loading of comparatives in batches for large source.md",
     "content/Symcom New Topics/Local Setup Guidelines.md",
     "content/Symcom New Topics/Project Structure.md",
     "content/Symcom New Topics/Symcom Documentation V2.0.md",
-    "content/Symcom New Topics/Resolution of slowness. Symcom Current Version vs New Version.md",
     "content/Symcom New Topics/Testings.md",
     "content/Symcom New Topics/Tiny MCE text editor for connect edit.md",
-    "Symcom Synonym Tool Developer Guidelines.md",
-    "content/Symcom New Topics/Explanation Notes.md",
-    "content/Contents.md",
     "content/Other Topics",
     "Other Topics",
-    "Discussions",
     "content/Repertorium Indexing",
     "symcom-v2-documentation",
     "public/symcom-v2-documentation/Symcom-Documentation-V2.0-og-image.webp",

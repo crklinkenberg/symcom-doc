@@ -6,14 +6,17 @@ In this page quick access links will be provided for properly navigating through
 4. Github Repo Link For Documentation: https://github.com/crklinkenberg/symcom-doc
 5. PhpMyAdmin Access For Symcom Latest:
 6. PhpMyAdmin Access For Old Symcom, Repertorium Indexing Program: https://reference-repertory.com/phpmyadmin/
-7. Old Symcom Website:
-8. New Symcom Website:
-9. Repertorium Indexing Website: https://repertorium.reference-repertory.com/
-10. Github Repo For Symcom Latest: https://github.com/crklinkenberg/new-symcom-development
-11. Github Repo For Symcom Old Production: https://github.com/crklinkenberg/symcom01Production
-12. Github Repo For Symcom Old Development: https://github.com/crklinkenberg/symcom01
-13. Github Repo For Symcom Synonym Tool: https://github.com/crklinkenberg/symcom-synonym-tool.git
-14. Github Repo Forked Symcom Synonym Tool: https://github.com/mertrasna/symcom-synonym-tool
+7. Old Symcom Website: https://v2.reference-repertory.com/
+8. New Symcom Website: https://reference-repertory.com/login
+9. Old Symcom Development Website: https://www.dev.reference-repertory.com/
+10. Old Symcom Stage Website: https://www.stage.reference-repertory.com/
+11. Repertorium Indexing Website: https://repertorium.reference-repertory.com/
+12. Preserved User View Demo Page: https://www.stage.reference-repertory.com/dev-exp/user-view-demo/
+13. Github Repo For Symcom Latest: https://github.com/crklinkenberg/new-symcom-development
+14. Github Repo For Symcom Old Production: https://github.com/crklinkenberg/symcom01Production
+15. Github Repo For Symcom Old Development: https://github.com/crklinkenberg/symcom01
+16. Github Repo For Symcom Synonym Tool: https://github.com/crklinkenberg/symcom-synonym-tool.git
+17. Github Repo Forked Symcom Synonym Tool: https://github.com/mertrasna/symcom-synonym-tool
 
 
 Source Code Location:
@@ -27,6 +30,7 @@ Source Code Location:
 8. SQL Backup For Symcom Latest: `/var/www/html/new-symcom-version/db-setup`
 
 Database details:
-1. Database name for Symcom Old Development: 
-2. Database name for Symcom Old Stage: 
-3. Database name for Symcom Old Production:
+1. Database name for Symcom Old Development: `development_repertory`
+2. Database name for Symcom Old Stage: `staging_repertory`
+3. Database name for Symcom Old Production: `production_repertory`
+4. Database name for Symcom Latest: `symcom_production_v2`
