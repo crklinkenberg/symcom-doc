@@ -15,6 +15,10 @@ This site contains information and technical guidelines for different symcom ver
 1. Repetorium Indexing Program: [[SETUP_DOCUMENTATION]]
 2. Symcom Old Version: [[Symcom Local Setup Details]]
 3. Symcom Latest Version: [[Local Setup Guidelines]]
+
+### Quick Access Links: 
+[[Quick Access Links and Info]]
+
 #### **Overview**:
 The site [www.reference-repertoy.com](http://www.reference-repertory.com) is the gateway to the main administrator panel. Upon logging in, addition of new books, new magazines, access to existing books, magazines, and grading configuration for fonts of sources, including details of medicines, authors, publishers, and tester (provers) can be found and edited.
 

@@ -10,3 +10,5 @@ Symcom version 2.0 is in development phase and details on the latest changes are
 [[Project Structure\|Project Structure]]
 
 [[Local Setup Guidelines\|Local Setup Guidelines]]
+
+[[Testings]]

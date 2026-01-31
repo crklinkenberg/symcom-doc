@@ -1,7 +1,7 @@
 ---
 {"dg-publish":true,"permalink":"/symcom-v2-documentation/local-setup-guidelines/"}
 ---
-
+### Setup for latest symcom version.
 
 Clone the git repository.
 
