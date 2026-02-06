@@ -111,16 +111,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT.md",
+                "file": "content/Symcom New Topics/Local Setup Guidelines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GPT"
+              "title": "Local Setup Guidelines"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -282,10 +282,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "c2c5fc0ec9a9bb63",
+  "active": "1abef605068a35d7",
   "lastOpenFiles": [
-    "content/Contents.md",
+    "GPT.md",
     "content/Updating the Documentation.md",
+    "content/Contents.md",
     "content/Symcom Developer Home.md",
     "Important Credentials.md",
     "content/Quick Access Links and Info.md",
@@ -298,7 +299,6 @@
     "Discussions",
     "content/Other Topics/Symcom Synonym Tool Readme.md",
     "content/Other Topics/Preservation of user view page.md",
-    "GPT.md",
     "content/index.md",
     "Remaining Task List Deductions.md",
     "README.md",

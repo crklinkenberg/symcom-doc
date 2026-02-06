@@ -57,7 +57,14 @@ use symcom_db;
 Step 4: 
 Go to the `symcom-app` container,
 Navigate to `symcom-laravel-app`.
-Install composer dependencies. `composer install --no-dev --optimize-autoloader`. The `vendor` folder will display upon successful installation.
+Install composer dependencies. 
+
+```
+composer install --no-dev --optimize-autoloader
+``` 
+
+The `vendor` folder will display upon successful installation.
+
 
 Step 5: 
 The `docker-compose.yml` file has database values:
